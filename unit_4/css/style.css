@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800);
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
-	background-color:#191919;
+	
+	background: #2a343a; 
+background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0), rgba(0,0,0,0.8) 1px, transparent 1px, transparent 6px);
+background-size: 8px 8px;
+
+  
 	font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 }
