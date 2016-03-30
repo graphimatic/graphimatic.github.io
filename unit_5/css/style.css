@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800);
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+	
+	background: #2a343a; 
+background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0), rgba(0,0,0,0.8) 1px, transparent 1px, transparent 6px);
+background-size: 8px 8px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+}
+header {
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+h1{
+	color:#fff;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#tagline{
+	font-weight: 400;
+	color: #fff;
+	
+	}
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #d7dbdf;
+	}
+/*div#logo {
+	background-color: #2a343a;
+	}*/
+nav {
+	font-weight: 400;
+	text-transform: uppercase;
+background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+	}
+nav a {
+	color: #fff;
+	background-color: #28333C;
+	padding: 10px;
+	}
+main {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+section {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}
+#intro {
+	/*background-color: #28333C;*/
+	}
+#intro p {
+	color: #d7dbdf;
+}
+footer{
+	/*background-color: #B2001C;*/
+color: #fff;
+background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+footer a {
+	color: #fff;
+}
