@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800);
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
-	
 	background: #2a343a; 
 	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0), rgba(0,0,0,0.8) 1px, transparent 1px, transparent 6px);
 	background-size: 8px 8px;
@@ -26,13 +25,19 @@ header {
 
 
 h1{
+	font-size: 1.5em;
 	color:#fff;
 	font-weight: 800;
 	text-transform: uppercase;
+	text-align: center;
 }
 #tagline{
 	font-weight: 400;
+	font-size: 1.5em;
+	letter-spacing: .2em;
 	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
 	
 	}
 h3 {
@@ -48,14 +53,15 @@ nav {
 	text-transform: uppercase;
 	background-color: #E8C66A;
     border: 1px black solid;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     clear: both;
 	}
 nav a {
 	color: #fff;
-	/*background-color: #28333C;*/
-	padding: 10px;
+	text-decoration: none;
+	background-color: #28333C;
+	padding: 20px;
 	}
 main {
 	background-color: #FFE2B8;
