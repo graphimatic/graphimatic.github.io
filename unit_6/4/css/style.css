@@ -103,7 +103,7 @@ section#intro div {
 	/*border-top: solid .5em yellow;*/
 }
 #areas a {
-	color: #B2001C;
+	background-color: #B2001C;
 	text-decoration: none;
 	width: 24%;
 	margin: .5%;
@@ -121,9 +121,9 @@ section#intro div {
 footer{
 	background-color: #B2001C;
 	color: #F3FFFF;
-    padding: 0 20px;
-    clear: both;
-    padding-bottom: 3em; 
+	padding: 0 20px;
+	clear: both;
+	padding-bottom: 3em; 
 }
 footer a {
 	color: #F3FFFF;
@@ -167,7 +167,8 @@ footer p {
 	padding-top: .5em;
 }
 #legal {
-	float: right;
+	clear:both;
 	font-size: 10px;
 	color: #191919;
+	text-align:center;
 }
