@@ -32,14 +32,14 @@ nav a {
 	color: rgba(255,255,255,.95);
 	text-decoration: none;
 	border-bottom: solid .25em #fff;
-	padding: .2em 0; /*padding zero for text-only length underline*/
-	margin: 0 .5em;
+	padding: 0 0 .2em 0; /*padding zero for text-only length underline*/
+	margin: .5em .9em;
 	}
 nav a:hover {
 	background-color: rgba(255,255,255,.95);
 	color: #B2001C;
-	/*border: none;*/
-	padding: .2em .5em;
+	border: none;
+	padding: .5em .9em;
 	margin: 0;
 }
 main {
@@ -103,7 +103,7 @@ section#intro div {
 	/*border-top: solid .5em yellow;*/
 }
 #areas a {
-	background-color: #B2001C;
+	color: #B2001C;
 	text-decoration: none;
 	width: 24%;
 	margin: .5%;
@@ -119,58 +119,19 @@ section#intro div {
 	opacity: .6;
 }
 footer{
-	background-color: rgba(255,255,255,.9);
-	color: #2a343a;
-	padding: 0 20px;
-	clear: both;
-	padding-bottom: 2em; 
+	background-color: #B2001C;
+	color: #F3FFFF;
+    padding: 0 20px;
+    clear: both;
+    padding-bottom: 3em; 
 }
 footer a {
-	color: #2a343a;
+	color: #F3FFFF;
 }
 footer h6 {
-	float: left;
-	color: rgba(195,229,243,.7);
-	color: #B2001C;
+	clear: left;
+	color: #F3FFFF;
 	text-transform: uppercase;
-	font-size: 1.3em;
-}
-footer > nav {
-	position: static;
-	/*float: left;*/
-	font-size: 1.4em;
-	margin-bottom: 2.2em;
-	padding-top: .5em;
-}
-footer > nav a {
-	color: #617A83;
-	margin-left: 0;
-	border-bottom: solid .2em #617A83;
-	}
-footer > nav a:hover {
-	background-color: transparent;
-	color: #191919;
-	padding-left: 0;
-	padding-right: 0;
-	margin-right: .5em;
-	border-bottom-color: #191919; 
-}
-footer div {
-	float: left;
-	margin-left: 2em;
-	font-size: .8em;
-}
-footer p {
-	/*padding-top: .5em;*/
-}
-#legal {
-	clear:both;
-	background-color: #B2001C;
-	font-size: .75em;
-	color: #fff;
-	text-align: center;
-	/*margin-right: 1em;*/
-	padding: .8em 0 1em 0;
 }
 .clearfix:after {
 	display: block;
@@ -179,4 +140,34 @@ footer p {
 	font-size: 0; 
 	visibility: hidden;
 	height: 0;
+}
+footer > nav {
+	position: static;
+	/*float: left;*/
+	font-size: 1.4em;
+	margin-bottom: 1.7em;
+	padding-top: .5em;
+}
+footer > nav a {
+	color: #879AA2;
+	margin-left: 0;
+	border-bottom: solid .2em #879AA2;
+	}
+footer > nav a:hover {
+	background-color: transparent;
+	color: rgba(255,255,255,.95);
+	padding-left: 0;
+}
+footer div {
+	float: left;
+	margin-right: 4em;
+	font-size: .8em;
+}
+footer p {
+	padding-top: .5em;
+}
+#legal {
+	float: right;
+	font-size: 10px;
+	color: #191919;
 }
