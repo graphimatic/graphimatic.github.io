@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);*/
+* { margin:0; padding:0; box-sizing:border-box;}
+body {
+	/*background: #2a343a;*/
+	background-color: #30393f; 
+	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0), rgba(0,0,0,0.8) 1px, transparent 1px, transparent 6px);
+	background-size: 8px 8px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+}
+body > header{
+	border-bottom: solid .1em #28333C;
+	background: url(../images/mapa_africa.svg) no-repeat rgba(0,0,0,.15);
+	background-size: 15%;
+	background-position: 15% 100%;
+	box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+	width: 12em;
+	position: absolute;
+	top: 1.2em;
+	left: 1.2em;
+}
+#header_img {
+	float: right;
+	width: 66%;
+}
+nav, h3, h1{
+	/*font-family: "Wor", arial, sans-serif;*/
+	font-weight: 800;
+}
+nav {
+	letter-spacing: .05em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	position: absolute;
+	top: .9em;
+	right: .9em;
+	}
+nav a {
+	color: rgba(255,255,255,.95);
+	text-decoration: none;
+	border-bottom: solid .2em #fff;
+	padding: .15em 0; /*padding zero for text-only length underline*/
+	margin: 0 .5em;
+	}
+nav a:hover {
+	background-color: rgba(255,255,255,.95);
+	color: #B2001C;
+	/*border: none;*/
+	padding: .2em .5em;
+	margin: 0;
+}
+main {
+	/*background-color: rgba(255,255,255,.05);*/
+	padding-bottom: 1em;
+}
+section {
+}
+h1{
+	font-size: 3em;
+	color: #C3E5F3;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 1em;
+	}
+h2 {
+	text-transform: uppercase;
+	color: #F3FFFF;
+	font-size: 1.4em;
+	padding: .2em 0;
+	font-weight: 400;
+	}
+h3 {
+	color: #B2001C;
+	font-size: 1.35em;
+	margin-bottom:.5em;
+	text-transform: uppercase;
+	line-height:1em;
+}
+main > p {
+	font-weight: 400;
+	font-size: 1.2em;
+	text-align: center;
+	font-style: italic;
+	color: #A4A5AD; 
+	}
+
+#areas {
+	width: 75%;
+    margin:0 auto;
+    margin-top: 2em;
+}
+/*#areas a {
+	text-decoration: none;
+	width: 24%;
+	margin: .5%;
+	float: left;
+	border-bottom: solid .5em rgba(0,0,0,.9);
+}*/
+#areas img {
+	width: 24%;
+	margin: .5%;
+	float: left;
+	display: block;
+	/*width: 100%;*/ /*100% of the parent (<a>), which has a width of 24%*/
+	line-height: 0;
+	/*border-bottom: solid .5em rgba(0,0,0,.9);*/
+
+}
+#intro {
+	padding: 0;
+	width: 74.5%;
+	margin: .5em auto;
+	/*border-bottom: solid 1.2em #000;*/
+	background-color: #A3001A;
+
+	}
+#intro div  {
+	float: left;
+	width: 37.5%;
+	margin: 0;
+	padding: 2em 2.2em;
+	background-color: #fff;
+	}
+#intro > header{
+	float: left;
+	width: 24%;
+	margin-left:1%;
+	color: #fff;
+	padding: 2em .5em;
+	line-height: 1.5em;
+	font-weight: normal;
+	}
+#intro p {
+	color: #191919;
+	font-size: .9em;
+	line-height: 1.4em;
+}
+
+footer{
+	background-color: rgba(0,0,0,.5);
+	color: #D0E1E8;
+	padding: 0 1.5em 1.5em 1.5em;
+	position: relative;
+	margin-top: 3em;
+}
+footer a {
+	color: #D0E1E8;
+}
+footer h3 {
+	float: left;
+	color: rgba(255,255,255,.85);
+	font-size: 1.4em;
+}
+footer > nav {
+	position: static;
+	/*float: left;*/
+	font-size: 1.4em;
+	margin-bottom: 1.9em;
+	padding-top: .5em;
+}
+footer > nav a {
+	letter-spacing: 0;
+	color: #91B7C4;
+	margin-left: 0;
+	border-bottom: solid .2em #91B7C4;
+	}
+footer > nav a:hover {
+	background-color: transparent;
+	color: #fff;
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: .5em;
+	border-bottom-color: #fff; 
+}
+footer div {
+	float: left;
+	margin-left: 2em;
+	font-size: .8em;
+}
+#legal {
+	font-size: .75em;
+	color: #D0E1E8;
+	text-align: center;
+	padding: .8em 0 1em 0;
+	position: absolute;
+	bottom:.7em;
+	right:2em;
+}
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0; 
+	visibility: hidden;
+	height: 0;
+}
