@@ -56,8 +56,6 @@ nav a:hover {
 main {
 	padding-bottom: 1em;
 }
-section {
-}
 h1{
 	font-size: 3em;
 	color: rgba(133,160,176,.85);
@@ -120,7 +118,10 @@ footer > nav a:hover {
 	color: #fff;
 	border-bottom-color: #fff; 
 }
-footer div:nth-of-type(1), footer div:nth-of-type(2) {
+footer section {
+	float: left;
+}
+footer section div {
 	float: left;
 	margin: 0 0 2em 1.5em;
 	font-size: .8em;
@@ -354,7 +355,7 @@ header div:nth-of-type(2){
 }
 @media only screen and (max-width: 572px) {
 	body {
-		font-size: 14px;
+		font-size: 15px;
 	}
 	#logo{
 		width:10em;
@@ -365,6 +366,22 @@ header div:nth-of-type(2){
 	#areas img {
 		width: 48%;
 		margin: 1%;
+	}
+	footer nav {
+		padding: .5em;
+	}
+	.icons a img {
+		display: block;
+		
+	}
+	.icons a:nth-child(1) img{
+		height: 23px;
+		padding-left: 0px;
+		margin-bottom: 8px;
+	}
+	.icons a:nth-child(2) img{
+		height: 20px;
+		padding-left: 3px;
 	}
 	
 }
@@ -402,18 +419,29 @@ header div:nth-of-type(2){
 	footer nav {
 		display: none;
 	}
-	.icons a img {
-		display: block;
-		
+	footer section {
+		float: none;
+		margin: 0 auto;
+		width: 20em;
 	}
-	.icons a:nth-child(1) img{
-		height: 23px;
-		padding-left: 0px;
-		margin-bottom: 8px;
+	footer h3 {
+		float: none;
+		padding: 5% 0 2% 10%;
+		/*display: inline-block;*/
 	}
-	.icons a:nth-child(2) img{
-		height: 20px;
-		padding-left: 3px;
+	footer section div {
+		padding:;
+		margin:;
+	}
+	.icons {
+		clear: right;
+		float: left;
+		text-align: center;
+		padding: 0 0 1em 10%;
+	}
+	.icons a:nth-child(1) img, .icons a:nth-child(2) img  {
+		display: inline;
+		margin: 0 .5em 0 0;
 	}
 }
 @media only screen and (max-width: 460px){
@@ -428,44 +456,7 @@ header div:nth-of-type(2){
 		font-size: 1.4em;
 		padding-top: 1em;
 	}
-	footer h3 {
-		float: none;
-		padding: 5% 0 2% 10%;
-		/*display: inline-block;*/
-	}
-	footer div:nth-of-type(1) {
-		padding-left: 10%;
-		margin: 0% 0 5% 0;
-	}
-	footer div:nth-of-type(2) {
-		padding-left: 5%;
-		margin: 0% 0 5% 0;
-	}
-	footer div:nth-of-type(3) {
-		padding-left: 5%;
-		margin: 0% 0 5% 0;
-		/*clear: left;*/
-	}
 	#logo{
 		width: 9em;
-	}
-	
-	.icons a:nth-child(1) img{
-		/*margin-bottom: 0px;*/
-	    margin-bottom: 8px;
-	}
-	.icons a:nth-child(2) img{
-		
-	}
-}
-@media only screen and (max-width: 378px){
-	.icons {
-		clear: both;
-		float: none;
-		text-align: center;
-	}
-	.icons a:nth-child(1) img, .icons a:nth-child(2) img  {
-		display: inline;
-		margin: 0 .5em 0 .5em;
 	}
 }
