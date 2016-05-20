@@ -37,7 +37,7 @@ nav {
 	letter-spacing: .05em;
 	font-size: 1.25em;
 	text-transform: uppercase;
-	clear: left;
+	/*clear: left;*/
 	float: right;
 	padding: .5em;
 	}
@@ -287,7 +287,7 @@ address {
 	background: url(../images/top_arrow.svg) no-repeat;
 	background-size: cover;
 	position: absolute;
-	bottom: 1px;
+	bottom: 2px;
 	right: -6%;
 }
 .icons {
@@ -308,16 +308,9 @@ address {
 	font-size: .75em;
 	color: #62737A;
 	text-align: center;
-	/*padding: .8em 0 1em 0;*/
-	/*position: absolute;*/
-	/*bottom:.7em;*/
-	/*right:2em;*/
-
-	/*position: static;*/
-		clear: left;
-		/*float: none;*/
-		background-color: #000;
-		padding:.8em;
+	clear: left;
+	background-color: #000;
+	padding:.8em;
 }
 .clearfix:after {
 	display: block;
