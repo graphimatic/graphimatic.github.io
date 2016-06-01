@@ -49,11 +49,20 @@ nav a {
 	margin: 0 .1em;
 	}
 nav a:hover {
-	color: rgba(255,255,255,1);
+	/*color: rgba(255,255,255,1);*/
 	color: #B2001C;
 	background-color: rgba(255,255,255,.9);
 	border-top: solid .25em #000;
 }
+nav a.active {
+	opacity:.5;
+	/*color: rgba(0,0,0,.9);
+	background-color: rgba(255,255,255,.9);*/
+}
+nav a.active:hover {
+	background: none;
+	color: rgba(255,255,255,.9);
+	}
 main {
 	padding-bottom: 1em;
 }
@@ -68,9 +77,10 @@ h1{
 h2 {
 	text-transform: uppercase;
 	color: #F3FFFF;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	padding: .2em 0;
 	font-weight: 400;
+	line-height:1.1em;
 	}
 h3 {
 	color: #B2001C;
@@ -87,6 +97,16 @@ h4 {
 	text-align: center;
 	letter-spacing: .05em;
 }
+h5 {
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height:1em;
+}
+h6 {
+	font-size: .9em;
+	padding-top: .35em;
+	padding-bottom: .2em;
+}
 main > p {
 	font-size: 1.1em;
 	text-align: center;
@@ -94,13 +114,10 @@ main > p {
 	text-transform: uppercase;
 	letter-spacing: .1em; 
 	}
-/*main > p {
-	font-weight: 400;
-	font-size: 1.2em;
-	text-align: center;
-	font-style: italic;
-	color: #A4A5AD; 
-}*/
+figure {
+	background-color: rgba(255,255,255,.95)
+	padding: 1em;
+}
 footer{
 	background-color: rgba(0,0,0,.5);
 	color: #D0E1E8;
@@ -117,7 +134,7 @@ footer h3 {
 	padding-left: 2em;
 }
 footer > nav {
-	float: left;
+	float: none;
 	font-size: 1.4em;
 	margin-bottom: 1em;
 	padding: .5em 1.75em;
@@ -188,7 +205,7 @@ address {
 	float: left;
 	background-color: rgba(255,255,255,.95);
 	width: 72%;
-	padding: 1.5em;
+	padding: 1.7em;
 	}
 #intro div div  {
 	float: left;
@@ -201,6 +218,47 @@ address {
 	font-size: .9em;
 	line-height: 1.4em;
 }
+#experiencia {
+	width: 97%;
+	margin: 2em auto 0 auto;
+}
+#experiencia > div:first-of-type {
+	margin: 0 auto;
+}
+#mapa_obras, .txt, #organigrama {
+	width: 65%;
+    margin:0 auto;
+    margin-top: 2em;
+}
+/*#experiencia > img {
+	display: block;
+}*/
+#organigrama {
+	display: block;
+}
+#mapa_obras img  {
+	width: 100%;
+	min-width: 693px;
+	display: block;
+}
+#legal {
+	font-size: .75em;
+	color: #62737A;
+	text-align: center;
+	clear: left;
+	background-color: #000;
+	padding:.8em;
+}
+
+#experiencia > div img {
+	width:24%;
+	/*min-width: 693px;*/
+	display: block;
+	margin:.5%;
+	float: left;
+	border-bottom: solid 1.25em #A3001A;
+}
+
 .proj_menu{
 	width: 60%;
     margin:0 auto;
@@ -290,6 +348,55 @@ address {
 	bottom: 2px;
 	right: -6%;
 }
+.proj_list {
+	padding: 1.5em;
+	width: 65%;
+	margin: 1em auto;
+	background-color: rgba(255,255,255,.95);
+	color: #191919;
+}
+.proj_list div {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 25px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 25px; /* Firefox */
+    column-gap: 25px;
+    padding-top: 1em;
+}
+.proj_list p{
+	font-size:.9em;
+}
+.proj_list ul {
+	list-style-type: none;
+	padding-bottom:.5em;
+}
+.proj_list li{
+	font-size:.9em;
+	line-height: 1em;
+	margin-bottom: .4em;
+}
+.txt {
+	padding: 1.5em;
+	background-color: rgba(255,255,255,.95);
+	color: #191919;
+	margin-bottom: 1em;
+}
+
+.txt_2cols {
+	-webkit-column-count: 2;
+    -moz-column-count: 2; 
+    column-count: 2;
+    -webkit-column-gap: 25px; 
+    -moz-column-gap: 25px; 
+    column-gap: 25px;
+    }
+.txt_2cols > p {
+	font-size: .9em;
+	line-height: 1.4em;
+	/*padding-bottom: .6em;*/
+	widows: 3; orphans: 3;
+}
 .icons {
 	float: right;
 	padding-right: 2em;
@@ -303,14 +410,6 @@ address {
 .icons a:nth-child(2) img{
 	height: 23px;
 	padding-left: 12px;
-}
-#legal {
-	font-size: .75em;
-	color: #62737A;
-	text-align: center;
-	clear: left;
-	background-color: #000;
-	padding:.8em;
 }
 .clearfix:after {
 	display: block;
@@ -418,17 +517,30 @@ address {
 		margin-top: -1.5em;
 		margin-right: 2.5em;
 	}
-	#intro, #areas {
+	#intro, #areas, #mapa_obras, #organigrama {
 		width: 90%;
 	}
 	#intro h2 {
 		/*font-size: 1em;*/
+	}
+	#experiencia > div:first-of-type {
+		width: 75%;
+	}
+	#experiencia > div img {
+	width: 48%;
+	margin: 1%;
+	}
+	.txt {
+		width: 73%;
 	}
 	.proj_menu {
 		width: 80%;
 	}
 	.proj_detail {
 		width: 79%;
+	}
+	.proj_list {
+		width: 90%;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -461,7 +573,10 @@ address {
 	#areas {
 		width: 100%;
 	}
-	#intro {
+	#experiencia > div:first-of-type {
+		width: 90%;
+	}
+	#intro , .txt{
 		width: 70%;
 	}
 	#intro div, #intro header {
@@ -473,6 +588,19 @@ address {
 		padding-left: 2.5em;
 		line-height: 1em;
 	}
+	#intro div div {
+		padding-left:0;
+	}
+	#intro > div {
+		padding: 2.7em;
+	}
+	#mapa_obras, #organigrama {
+		width:100%;
+	}
+	#mapa_obras img, #organigrama img {
+		float:right;
+	}
+
 	#legal {
 		position: static;
 		clear: left;
@@ -484,11 +612,25 @@ address {
 		width: 100%;
 	}
 	h4 {
-	font-size: 1em;
+		font-size: 1em;
 	}
 	.proj_detail img + img {
 		margin-top: 0;
 	}
+	.proj_list {
+		width: 70%;
+		padding: 2.7em;
+	}
+	.proj_list div{
+		-webkit-column-count: 2; 
+	    -moz-column-count: 2; 
+	    column-count: 2;
+	}
+	.txt_2cols {
+	-webkit-column-count: 1;
+    -moz-column-count: 1; 
+    column-count: 1;
+    }
 }
 @media only screen and (max-width: 572px) {
 	body {
@@ -500,6 +642,7 @@ address {
 	#areas, #intro {
 		width: 80%;
 	}
+
 	#areas img {
 		width: 48%;
 		margin: 1%;
@@ -507,7 +650,9 @@ address {
 	footer nav {
 		padding: .5em;
 	}
-	
+	.txt {
+		width: 88%;
+	}
 	.icons a img {
 		display: block;
 		
@@ -523,6 +668,9 @@ address {
 	}
 	.proj_menu p {
 		letter-spacing: 0;
+	}
+	.proj_list {
+		width: 80%;
 	}
 	iframe {
 		height: 150px;
@@ -577,14 +725,30 @@ address {
 		padding:;
 		margin:0 2em 2em 0;
 	}
-	.proj_menu{
-		display: none;
-	}
+	
 	h3 {
 		font-size: 1em;
 	}
 	iframe {
 		display: none;
+	}
+	#organigrama {
+		display: none;
+	}
+	#experiencia div img:nth-child(3), #experiencia div img:nth-child(4) {
+	display: none;
+	}
+	#experiencia > div img {
+	width: 98%;
+	float: none;
+	}
+	.proj_menu{
+		display: none;
+	}
+	.proj_list div{
+		-webkit-column-count: 1; 
+	    -moz-column-count: 1; 
+	    column-count: 1;
 	}
 }
 @media only screen and (max-width: 460px){
@@ -595,9 +759,21 @@ address {
 		color: #91B7C4;
 		border-bottom: solid .1em #91B7C4;
 	}
+	nav a:hover {
+		color: #fff;
+		background: none;
+	}
+	nav a.active {
+		color: rgba(255,255,255,.9);
+		background: none;
+	}
 	h1 {
 		font-size: 1.4em;
 		padding-top: 1em;
+	}
+	footer section div {
+		float: none;
+		margin: 0 2em 1em 0;
 	}
 	#logo{
 		width: 9em;
@@ -608,10 +784,8 @@ address {
 	.proj_detail img:first-of-type {
 		margin-bottom: .25em;
 	}
-	footer section div {
-		float: none;
-		margin: 0 2em 1em 0;
-	}
+	
+	
 	.icons{
 		clear: right;
 	}
