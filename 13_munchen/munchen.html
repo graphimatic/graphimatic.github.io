@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100|Arimo:400,400italic' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>A Teixeira</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/jquery.cycle2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container clearfix">
+    <header class="narrow">
+        <a href="http://www.ana-teixeira.com">Ana<br />Teixeira</a>
+        <hr></hr>
+    </header>
+    <main class="thirtyfive clearfix">
+      <section id="album-name" class="clearfix">
+        <h1>München<br /><em>III. [film]</em></h1>
+        <ul id="more">
+          <li><a href="index.html"><em>I. [film]</em></a></li>
+          <li><a href="munchen_bw.html"><em>II. [film]</em></a></li>
+          <li><a href="13_munchen_snaps.html"><em>IV. [snapshots]</em></a></li>
+        </ul>
+      </section>
+      <section id="slide_viewer" class="clearfix">
+        <img id="prev" class="arrows" src="images2/arrowBck_35.png" alt="backward arrow"/>
+        <div class="cycle-slideshow" data-cycle-fx="fadeout"
+        data-cycle-timeout="0"
+        data-cycle-prev="#prev"
+        data-cycle-next="#next"
+        data-cycle-caption="#adv-custom-caption"
+        data-cycle-caption-template="{{cycleTitle}}">
+          <img class="V" src="images3/000004.jpg" alt="maximiliaeum, bavarian parliament" data-cycle-title="Maximilianeum">
+          <img src="images3/000005.jpg" alt="rescue ring" data-cycle-title="">
+          <img src="images3/000006.jpg" alt="volkswagen" data-cycle-title=""> 
+          <img class="V" src="images3/000040.jpg" alt="volkswagen" data-cycle-title=""> 
+          <img src="images3/000052.jpg" alt="Lichtspiele" data-cycle-title="Museum Lichtspiele"> 
+          <img src="images3/000023.jpg" alt="entrance and bike" data-cycle-title=""> 
+          <img src="images3/000051.jpg" alt="isar" data-cycle-title=""> 
+          <img src="images3/000018.jpg" alt="englishgarten" data-cycle-title=""> 
+          <img class="V" src="images3/000015.jpg" alt="arcades" data-cycle-title="">  
+          <img src="images3/000045.jpg" alt="arcades with curtain instalation" data-cycle-title=""> 
+          <img src="images3/000028.jpg" alt="Fünf Höfe" data-cycle-title="Fünf Höfe by Herzog & de Meuron"> 
+          <img class="V" src="images3/000027.jpg" alt="Fünf Höfe" data-cycle-title=""> 
+          <img src="images3/000032.jpg" alt="Fünf Höfe" data-cycle-title=""> 
+          <img src="images3/000037.jpg" alt="sammlung goetz" data-cycle-title="Sammlung Goetz gallery by Herzog & de Meuron"> 
+          <img class="V" src="images3/000057.jpg" alt="sammlung goetz" data-cycle-title=""> 
+          <img class="V" src="images3/000054.jpg" alt="judiches museum" data-cycle-title="Jüdiches Museum">
+          <img class="V" src="images3/000055.jpg" alt="financial district" data-cycle-title="">
+          <img src="images3/000034.jpg" alt="financial district" data-cycle-title=""> 
+        </div>
+        <img id="next" class="arrows clearfix" src="images2/arrowFwd_35.png" alt="forward arrow">
+        <p id="adv-custom-caption"></p>
+      </section>
+    </main>
+    <aside>
+      <iframe src="http://www.ana-teixeira.com/photos/picture_index.html"></iframe>
+      <!-- <iframe src="http://www.ana-teixeira.com/photos/picture_index.html" width= "110" height="600px"></iframe> -->
+    </aside>
+  </div><!-- end .container -->
+  <script type="text/javascript">
+function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
+</script>
+</body>
+</html>

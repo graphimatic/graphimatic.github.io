@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A Teixeira</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+<div class="container clearfix">
+      <header class="narrow">
+          <a href="http://www.ana-teixeira.com">Ana<br />Teixeira</a>
+          <hr></hr>
+      </header>
+      <main class="thirtyfive clearfix">
+        <section id="album-name" class="clearfix">
+            <h1>München<br /><em>II. [film]</em></h1>
+            <ul id="more">
+                <li><a href="index.html"><em>I. [film]</em></a></li>
+                <li><a href="munchen.html"><em>III. [film]</em></a></li>
+                <li><a href="13_munchen_snaps.html"><em>IV. [snapshots]</em></a></li>
+            </ul>
+        </section>
+        <section id="slide_viewer" class="clearfix">
+          <img id="prev" class="arrows" src="images2/arrowBck.png" alt="backward arrow"/>
+          <div class="cycle-slideshow" data-cycle-fx="fadeout"
+          data-cycle-timeout="0"
+          data-cycle-prev="#prev"
+          data-cycle-next="#next"
+          data-cycle-caption="#adv-custom-caption"
+          data-cycle-caption-template="{{cycleTitle}}">
+            <img src="images_bw/munich004.jpg" alt= "Nelly" data-cycle-title="Nelly">
+            <img src="images_bw/munich001.jpg" alt="Olympic Park" data-cycle-title="Olympic Park"> 
+            <img src="images_bw/munich010.jpg" alt="Olympic Park" data-cycle-title="Olympic Park"> 
+            <img src="images_bw/munich009.jpg" alt="Olympic Park" data-cycle-title="Olympic Park"> 
+            <img src="images_bw/munich008.jpg" alt="Olympic Park" data-cycle-title="Olympic Park"> 
+            <img src="images_bw/munich013.jpg" alt="couple" data-cycle-title="couple"> 
+            <img src="images_bw/munich006.jpg" alt="München Hauptbahnhof" data-cycle-title="München Hauptbahnhof"> 
+            <img src="images_bw/munich007.jpg" alt="München Hauptbahnhof" data-cycle-title="München Hauptbahnhof"> 
+            <img src="images_bw/munich011.jpg" alt="München Hauptbahnhof" data-cycle-title="München Hauptbahnhof"> 
+            <img src="images_bw/munich012.jpg" alt="by lake Schliersee" data-cycle-title="by lake Schliersee"> 
+            <img class="V" src="images_bw/munich002.jpg" alt="Nelly" data-cycle-title="Nelly"> 
+            <img class="V" src="images_bw/munich003.jpg" alt="Nelly" data-cycle-title="Nelly"> 
+            <img class="V" src="images_bw/munich005.jpg" alt="Sammlung Goetz gallery" data-cycle-title="Sammlung Goetz gallery"> 
+          </div>
+          <img id="next" class="arrows clearfix" src="images2/arrowFwd.png" alt="forward arrow">
+          <p id="adv-custom-caption"></p>
+      </section>
+      </main>
+      <aside>
+        <iframe src="http://www.ana-teixeira.com/photos/picture_index.html"></iframe>
+      </aside>
+    </div><!-- end .container -->
+    <script type="text/javascript">
+  function click (e) {
+    if (!e)
+      e = window.event;
+    if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+      if (window.opera)
+        window.alert("");
+      return false;
+    }
+  }
+  if (document.layers)
+    document.captureEvents(Event.MOUSEDOWN);
+  document.onmousedown = click;
+  document.oncontextmenu = click;
+  </script>
+  </body>
+</html>
+
