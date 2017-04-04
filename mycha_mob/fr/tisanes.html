@@ -1,0 +1,323 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyCha</title>
+<link href="../boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../_css/main.css" rel="stylesheet" type="text/css">
+<script src="../respond.min.js"></script>
+<!--The following script tag downloads a font from the free fonts server for use within the web page. We recommend that you do not modify it.-->
+<script src="http://webfonts.creativecloud.com/basic:n4:default;crimson-text:n4:default;bentham:n4:default;cardo:n4:default;asap:n4,i4:default.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('/mycha_mob/images/f_logo.png')">
+<div class="gridContainer clearfix">
+  <div id="pg_header" class="fluid">
+
+<div id="logo_S"><a href="index_fr.html"><img src="../images/logo1.jpg" /></a> </div>
+
+  <div id="fb"><a href="https://www.facebook.com/mychaface" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fb2','','/mycha_mob/images/f_logo.png',1)"><img src="../images/f_grey.png" alt="facebook" width="23" height="23" id="fb2"></a> 
+  </div>
+ <div id="idioma">
+    <ul>
+      <li><a href="../pt/infusoes.html">pt</a></li>
+      <li><a href="../en/infusions.html" >en</a></li>
+    </ul>
+  </div>
+  
+   <form action="https://madmimi.com/signups/subscribe/44881" id="mad_mimi_signup_form" method="post" target="_blank">
+       <div class="required">
+          <!--<label for="signup_email">Email</label>
+          <br/>-->
+          <input  class="required" data-invalid-email="This field is invalid" data-required-field="This field is required" id="signup_email" name="signup[email]" placeholder=" insert your email" type="text"/>
+       </div>
+       <div>
+          <input class="submit" data-choose-list="&#8593; Choose a list" data-default-text="Subscribe" data-invalid-text="&#8593; You forgot some required fields" data-submitting-text="Sending..." id="webform_submit_button" name="commit" type="submit" value="Subscribe"/>
+       </div>
+    </form>
+    
+    
+  
+  
+</div>
+
+<div id="main" class="fluid">
+
+<h2>Les Tisanes</h2>
+
+<div class="white_bg">
+
+<table id="chas">
+<!--<tr>
+<td colspan="2"><img class="photo" src="../images/3chas_L.jpg"  /></td>
+</tr>-->
+  <tr>
+    <td width="30%" rowspan="4"><h3>Les tranquilles
+</h3></td>
+    <td width="70%"><a href="#calmeChaud">Au calme, Au chaud</a></td>
+  </tr>
+  <tr>
+  <td><a href="#orangerie">L'Orangerie</a></td>
+  </tr>
+  <tr>
+    <td><a href="#blueMoon">Blue Moon</a></td>
+  </tr>
+  <tr>
+    <td><a href="#fullMoon">Full Moon</a></td>
+  </tr>
+  <tr>
+    <td rowspan="5"><h3>Les toniques
+</h3></td>
+    <td><a href="#madame">Madame a besoin d’énergie</a></td>
+  </tr>
+  <tr>
+    <td><a href="#monsieur" >Monsieur a besoin d’énergie</a></td>
+  </tr>
+   <tr>
+  <td><a href="#siAmore">Si, Amore!</a></td>
+  </tr>
+  <tr>
+  <td><a href="#samarcanda">Samarcanda</a></td>
+  </tr>
+  <tr>
+  <td><a href="#leFeu">Le Feu</a></td>
+  </tr>
+  <tr>
+    <td rowspan="4"><h3>Les petits plus
+</h3></td>
+    <td><a href="#tropMange">Trop mangé de chocolat!</a></td>
+  </tr>
+  <tr>
+    <td><a href="#adieuMonRhume" >Adieu mon rhume</a></td>
+  </tr>
+  <tr>
+    <td><a href="#pure" >Pure</a></td>
+  </tr>
+  <tr>
+    <td><a href="#circulez" >Circulez!</a></td>
+  </tr>
+   <tr>
+    <td rowspan="2"><h3>beauty</h3></td>
+    <td><a href="#slim" >Slim</a></td>
+  </tr>
+  <tr>
+    <td><a href="#skin" >skin</a></td>
+  </tr>
+  
+</table>
+
+</div>
+<a id="calmeChaud"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/calme_L.jpg" />
+  <h4 class="cha_detail">Au calme, au chaud</h4>
+<h5 class="cha_detail">Calme, réchauffe, réconforte</h5>
+<p class="cha_detail ingredientes">
+Cannelle, Fleur d’Oranger, Tilleul</p>
+<p class="cha_detail">Fermez les yeux et imaginez un feu de cheminée, un moment pour soi, un parfum rassurant…  Le  calme du tilleul, la chaleur de la cannelle et la douceur de la fleur d’oranger. Il suffit de la respirer pour se sentir déjà réconforté, comme dans un cocon. 
+ </p>
+</div>
+
+<a id="orangerie"></a>
+<div class="tranquilas">
+<img class="photo" src="../images/orangerie_L.jpg" />
+<h4 class="cha_detail">L’orangerie</h4>
+<h5 class="cha_detail">Au paradis des agrumes</h5>
+<p class="cha_detail ingredientes">
+Basilic, Ecorce de citron, Fleur d’oranger, Verveine
+</p>
+<p class="cha_detail">Plante sacrée en Orient, le Basilic favorise la concentration et son huile essentielle permet de lutter contre l’anxiété. En infusion, ce sont essentiellement ses qualités digestives que l’on appréciera. Sa fraîcheur sucrée se mêle aux arômes des agrumes pour cette infusion inspirante, comme une promenade dans une orangerie.
+</p>
+</div>
+
+<a id="blueMoon"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/blue_moon_L.jpg" />
+  <h4 class="cha_detail">Blue Moon</h4>
+<h5 class="cha_detail">Rafraîchit et repose, inspire</h5>
+<p class="cha_detail ingredientes">
+Lavande, Mélisse, Menthe Poivrée, Verveine, Fleur de Mauve, Valériane
+</p>
+<p class="cha_detail">Respirez-la et laissez la lavande et la verveine vous  délasser. Aussi douce après le dîner, grâce à la mélisse, que pour rafraîchir un après midi d’été avec des glaçons et quelques feuilles de menthe fraîche.
+</p>
+</div>
+<a id="fullMoon"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/fullmoon_L.jpg" />
+  <h4 class="cha_detail">Full Moon</h4>
+<h5 class="cha_detail">C’est la nuit… mais on ne dort pas…</h5>
+<p class="cha_detail ingredientes">
+Lavande, Citronnelle, Menthe Poivrée, Fleur de Mauve, Valériane
+</p>
+<p class="cha_detail">Très fraîche, elle a toutes les vertus de la menthe et de la lavande… avec un petit zeste piquant, cadeau de la citronnelle! Egalement une délicieuse boisson d’été avec sa belle couleur bleu mauve.
+</p>
+</div>
+<a id="madame"></a>
+<div class="tonicas">
+  <img class="photo" src="../images/madame_L.jpg" />
+  <h4 class="cha_detail">Madame a besoin d’énergie</h4>
+<h5 class="cha_detail">Donne des forces pour longtemps</h5>
+<p class="cha_detail ingredientes">
+Myrtille, Feuille de Framboisier, Ginseng, Hibiscus, Verveine citronnée, Rose, Immortelle, Ortie
+</p>
+<p class="cha_detail">De l’ortie reminéralisante, de la myrtille antioxydante, de l’hibiscus tonique…. Pas moins de 8 plantes pour soutenir et renforcer les femmes comme elles en ont besoin.
+ </p>
+</div>
+<a id="monsieur"></a>
+<div class="tonicas">
+  <img class="photo" src="../images/monsieur_L.jpg" />
+  <h4 class="cha_detail">Monsieur a besoin d’énergie</h4>
+<h5 class="cha_detail">Vivifie, réveille, tonifie</h5>
+<p class="cha_detail ingredientes">
+Romarin, Ginseng, Ortie, Thym citronné
+</p>
+<p class="cha_detail">Une boisson très masculine aux arômes de terre et boisés, qui renforce l’énergie yang grâce au ginseng.
+ </p>
+</div>
+
+<div class="tonicas">
+<img class="photo" src="../images/si_amore_L.jpg" />
+<h4 class="cha_detail">Si Amore!</h4>
+<h5 class="cha_detail">L'amour en tasse</h5>
+<p class="cha_detail ingredientes">
+Enveloppe de fèves de cacao, Pétales de Roses, Vanille de Madagascar en gousses
+</p>
+<p class="cha_detail">Sensuelle et alléchante, cette puissante infusion au goût de cacao vanillé est simplement irrésistible. Légèrement tonique, elle puise ses arômes dans une luxueuse combinaison de plantes. Si parfumée qu’elle comble même les petites fringales de chocolat… sans les calories!
+</p>
+</div>
+
+<a id="samarcanda"></a>
+<div class="tonicas">
+<img class="photo" src="../images/samarcanda_L.jpg" />
+<h4 class="cha_detail">Samarcanda</h4>
+<h5 class="cha_detail">Un trésor sur la Route de la Soie</h5>
+<p class="cha_detail ingredientes">
+Roses, Cannelle, Cardamome, Poivre noir, Clou de girofle</p>
+<p class="cha_detail">Riche, épicée, piquante, très orientale, cette infusion réchauffe les jours d’hiver, combat les refroidissements et nous emmène sur la route de la soie... 
+
+</p>
+</div>
+
+<a id="leFeu"></a>
+<div class="tonicas">
+<img class="photo" src="../images/leFeu_L.jpg" />
+<h4 class="cha_detail">Le Feu</h4>
+<h5 class="cha_detail">Allumez le feu sous la couette avec cette infusion tonique et coquine</h5>
+<p class="cha_detail ingredientes">
+Gingembre, Cannelle, Damiane</p>
+<p class="cha_detail">Ça chauffe! Des plantes piquantes et extra toniques pour réveiller tous nos sens et les mettre en émoi. A partager bien sûr…
+</p>
+</div>
+
+<a id="tropMange"></a>
+<div class="detox">
+<img class="photo" src="../images/chocolat_L.jpg" />
+<h4 class="cha_detail">Trop mangé de chocolat!</h4>
+<h5 class="cha_detail">Petite aide digestive</h5>
+<p class="cha_detail ingredientes">
+Réglisse, Angélique, Anis Etoilé, Menthe Poivrée
+</p>
+<p class="cha_detail">Pour faire oublier un petit excès ou tout simplement pour le plaisir de ses notes anisées.
+</p>
+</div>
+<a id="adieuMonRhume"></a>
+<div class="detox">
+  <img class="photo" src="../images/rhume_L.jpg" />
+  <h4 class="cha_detail">Adieu mon rhume</h4>
+<h5 class="cha_detail">Vite, dès les premiers frissons!</h5>
+<p class="cha_detail ingredientes">
+Lavande, Equinacée, Eucalyptus, Gingembre, Rose, Thym citronné
+</p>
+<p class="cha_detail">La tisane à avoir chez soi par précaution! Tellement aromatique et riche en eucalyptus qu’elle peut servir pour une inhalation, si malgré tout le rhume s’est installé (dans ce cas, préparer en <a href="recettes.html#decoccion">décoction</a>).
+ </p>
+</div>
+<a id="pure"></a>
+<div class="detox">
+<img class="photo" src="../images/pure_L.jpg"  />
+<h4 class="cha_detail">Pure</h4>
+<h5 class="cha_detail">Nettoyage de Printemps ou lendemain de fête</h5>
+<p class="cha_detail ingredientes">
+Artichaud, Boldo, Reine des Prés, Sariette, Calendula, Orthosiphon, Ortie
+</p>
+<p class="cha_detail">Quand il le faut … une potion un peu amère mais efficace.</p>
+</div>
+<a id="circulez"></a>
+<div class="detox">
+<img class="photo" src="../images/circulez_L.jpg" />
+<h4 class="cha_detail">Circulez!</h4>
+<h5 class="cha_detail">Pour l’entretien de nos 160.000 kilomètres de vaisseaux sanguins</h5>
+<p class="cha_detail ingredientes">
+Vigne rouge, Géranium Robert, Myrtille, Hibiscus, Rose
+ </p>
+<p class="cha_detail">Un goût acidulé et fleuri pour ce mélange de plantes protectrices.
+</p>
+</div>
+
+<a id="slim"></a>
+<div class="beauty">
+<img class="photo" src="../images/slim_L.jpg"  />
+<h4 class="cha_detail">Slim</h4>
+<h5 class="cha_detail">Délivrez-nous du superflu</h5>
+<p class="cha_detail ingredientes">Réglisse, Cassis, Vigne rouge, Piloselle, Barbes de maïs, Reine des prés</p>
+<p class="cha_detail">Drainer, débarrasser notre organisme de ce qui l'alourdit et nous voilá allégées et affinées.</p>
+</div>
+
+<a id="skin"></a>
+<div class="beauty">
+<img class="photo" src="../images/skin6_L.jpg"  />
+<h4 class="cha_detail">Skin</h4>
+<h5 class="cha_detail">Faire peau neuve</h5>
+<p class="cha_detail ingredientes">
+Bardane, Romarin, Souci, Menthe Poivrée</p>
+<p class="cha_detail">Un goût frais et mentholé pour ce mélange de plantes amies de la peau.</p>
+</div>
+
+<!--end of div "main"-->
+</div>
+<div class="spacer_bottom"></div>
+<footer>
+<ul>
+	<li><a href="concept.html">my cha</a></li>
+   <!--<li> <a href="tisanes.html">tisanes</a></li>-->
+   <li> <a href="je_me_sens.html">je me sens...</a></li>
+    <li><a href="recettes.html">recettes</a></li>
+    <li><a href="acheter.html">acheter</a></li>
+   <li> <a href="press.html">press</a></li>
+   <li> <a href="magazins.html">Lieux</a></li>
+   <li> <a href="contact.html">contact</a></li>
+</ul>
+</footer>
+  
+  
+</div>
+</body>
+</html>

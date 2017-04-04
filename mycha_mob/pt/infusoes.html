@@ -1,0 +1,306 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyCha</title>
+<link href="../boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../_css/main.css" rel="stylesheet" type="text/css">
+<script src="../respond.min.js"></script>
+<!--The following script tag downloads a font from the free fonts server for use within the web page. We recommend that you do not modify it.-->
+<script src="http://webfonts.creativecloud.com/basic:n4:default;crimson-text:n4:default;bentham:n4:default;cardo:n4:default;asap:n4,i4:default.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('/mycha_mob/images/f_logo.png')">
+<div class="gridContainer clearfix">
+  
+<div id="pg_header" class="fluid">
+
+<div id="logo_S"><a href="../index.html"><img src="../images/logo1.jpg" /></a> </div>
+
+  <div id="fb"><a href="https://www.facebook.com/mychaface" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fb2','','/mycha_mob/images/f_logo.png',1)"><img src="../images/f_grey.png" alt="facebook" width="23" height="23" id="fb2"></a> 
+  </div>
+  <div id="idioma">
+    <ul>
+      <li><a href="../en/infusions.html">en</a></li>
+      <li><a href="../fr/tisanes.html">fr</a></li>
+    </ul>
+  </div>
+  
+   <form action="https://madmimi.com/signups/subscribe/44881" id="mad_mimi_signup_form" method="post" target="_blank">
+       <div class="required">
+          <!--<label for="signup_email">Email</label>
+          <br/>-->
+          <input  class="required" data-invalid-email="This field is invalid" data-required-field="This field is required" id="signup_email" name="signup[email]" placeholder=" insert your email" type="text"/>
+       </div>
+       <div>
+          <input class="submit" data-choose-list="&#8593; Choose a list" data-default-text="Subscribe" data-invalid-text="&#8593; You forgot some required fields" data-submitting-text="Sending..." id="webform_submit_button" name="commit" type="submit" value="Subscribe"/>
+       </div>
+    </form>
+    
+    
+  
+  
+</div>
+
+<div id="main" class="fluid">
+
+<h2>Infusões</h2>
+
+<div class="white_bg">
+
+<table id="chas">
+  <tr>
+    <td width="30%" rowspan="4"><h3>As tranquilas</h3></td>
+    
+    <td width="70%"><a href="#calmeChaud">Au calme, Au chaud</a></td>
+  </tr>
+  <tr>
+  <td><a href="#orangerie">L'Orangerie</a></td>
+  </tr>
+  <tr>
+    <td><a href="#blueMoon">Blue Moon</a></td>
+  </tr>
+  <tr>
+    <td><a href="#fullMoon">Full Moon</a></td>
+  </tr>
+  <tr>
+    <td rowspan="5"><h3>As tónicas</h3></td>
+    <td><a href="#madame">Madame a besoin d’énergie</a></td>
+  </tr>
+  <tr>
+    <td><a href="#monsieur" >Monsieur a besoin d’énergie</a></td>
+  </tr>
+  <tr>
+  <td><a href="#siAmore">Si, Amore</a></td>
+  </tr>
+  <tr>
+  <td><a href="#samarcanda">Samarcanda</a></td>
+  </tr>
+  <tr>
+  <td><a href="#leFeu">Le Feu</a></td>
+  </tr>
+  <tr>
+    <td rowspan="4"><h3>Para os pequenos exageros</h3></td>
+    <td><a href="#tropMange">Trop mangé de chocolat!</a></td>
+  </tr>
+  <tr>
+    <td><a href="#adieuMonRhume" >Adieu mon rhume</a></td>
+  </tr>
+  <tr>
+    <td><a href="#pure" >Pure</a></td>
+  </tr>
+  <tr>
+    <td><a href="#circulez" >Circulez!</a></td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2"><h3>beauty</h3></td>
+  <td><a href="#slim" >Slim</a></td>
+  </tr>
+  <tr>
+    <td><a href="#skin" >skin</a></td>
+  </tr>
+  
+</table>
+</div>
+
+<a id="calmeChaud"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/calme_L.jpg" />
+  <h4 class="cha_detail">Au calme, au chaud</h4>
+<h5 class="cha_detail">Acalma, ameniza, reconforta</h5>
+<p class="cha_detail ingredientes">
+Canela, Flor de Laranjeira, Tília</p>
+<p class="cha_detail">Feche os olhos e imagine o calor envolvente de uma lareira, um momento para si, um perfume sedutor... A calma da tília, o calor de canela e a suavidade da flor de laranja.  Basta respirá-la para se sentir confortado, aconchegado.</p>
+</div>
+
+<a id="orangerie"></a>
+<div class="tranquilas">
+<img class="photo" src="../images/orangerie_L.jpg" />
+<h4 class="cha_detail">L’orangerie</h4>
+<h5 class="cha_detail">Como um passeio num jardim de citrinos</h5>
+<p class="cha_detail ingredientes">
+Manjericão, Lúcia Lima, Flor de Laranjeira, Casca de limão</p>
+<p class="cha_detail">Planta sagrada no Oriente, o manjericão facilita a concentração e o óleo essencial ajuda a combater a ansiedade. Numa infusão apreciamos essencialmente as suas qualidades digestivas. Sua doce frescura combina com os aromas de citrinos para esta infusão inspiradora, como um passeio num jardim do Algarve.
+</p>
+</div>
+
+
+<a id="blueMoon"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/blue_moon_L.jpg" />
+  <h4 class="cha_detail">Blue Moon</h4>
+<h5 class="cha_detail">Refresca e repousa, inspira</h5>
+<p class="cha_detail ingredientes">
+Alfazema, Cidreira, Hortelã-pimenta, Lúcia-lima, Malva, Valeriana</p>
+<p class="cha_detail">Inspire e deixe a alfazema e a Lúcia-lima relaxarem os seus sentidos. Ideal após o jantar, graças às qualidades digestivas da cidreira, bem como em chá gelado. Uma cor surpreendente nos primeiros minutos de infusão: vale a pena preparar num bule transparente!</p>
+</div>
+<a id="fullMoon"></a>
+<div class="tranquilas">
+  <img class="photo" src="../images/fullmoon_L.jpg" />
+  <h4 class="cha_detail">Full Moon</h4>
+<h5 class="cha_detail">Refresca e repousa, sacia</h5>
+<p class="cha_detail ingredientes">
+Alfazema, Erva Príncipe, Hortelã-pimenta, Malva, Valeriana</p>
+<p class="cha_detail">Muito fresca, tem todas as virtudes da hortelã e da alfazema… com o toque picante e sabor a limão trazidos pela erva príncipe! Também uma deliciosa bebida no Verão adicionando algumas folhas de hortelã fresca.</p>
+</div>
+<a id="madame"></a>
+<div class="tonicas">
+  <img class="photo" src="../images/madame_L.jpg" />
+  <h4 class="cha_detail">Madame a besoin d’énergie</h4>
+<h5 class="cha_detail">Dá forças durante mais tempo</h5>
+<p class="cha_detail ingredientes">
+Arando, Framboeseiro, Ginseng, Hibiscus, Lúcia-Lima, Perpetua Roxa, Rosa, Urtiga Vulgaris</p>
+<p class="cha_detail">Urtiga remineralizante, arando antioxidante, hibiscus tónico…. 8 plantas dedicadas ao bem estar feminino, reforçando e apoiando as mulheres exactamente como elas desejam e precisam.</p>
+</div>
+<a id="monsieur"></a>
+<div class="tonicas">
+  <img class="photo" src="../images/monsieur_L.jpg" />
+  <h4 class="cha_detail">Monsieur a besoin d’énergie</h4>
+<h5 class="cha_detail">Estimula, desperta, fortifica</h5>
+<p class="cha_detail ingredientes">
+Alecrim, Ginseng, Urtiga Vulgaris, Tomilho Limão</p>
+<p class="cha_detail">Um chá muito masculino, com sabores, fortes mas subtis, de terra e raízes, que reforça a energia yang graças à presença de ginseng.</p>
+</div>
+
+<a id="siAmore"></a>
+<div class="tonicas">
+<img class="photo" src="../images/si_amore_L.jpg" />
+<h4 class="cha_detail">Si, Amore</h4>
+<h5 class="cha_detail">Um chá apaixonado</h5>
+<p class="cha_detail ingredientes">
+Casca de cacau, Rosas, Vagem de baunilha de Madagascar</p>
+<p class="cha_detail">Sensual e sedutor, este potente bebida baunilha cacau sabor é simplesmente irresistível. Ligeiramente atenuada, ele desenha os seus sabores em uma combinação de luxo com plantas. Tão perfumado que enche mesmo pequeno ... desejos de chocolate sem calorias!</p>
+</div>
+
+<a id="samarcanda"></a>
+<div class="tonicas">
+<img class="photo" src="../images/samarcanda_L.jpg" />
+<h4 class="cha_detail">Samarcanda</h4>
+<h5 class="cha_detail">Um tesouro da Rota da Seda</h5>
+<p class="cha_detail ingredientes">
+Rosa, Canela, Manjericão, Cardamomo, Pimenta preta, Cravinho</p>
+<p class="cha_detail">Rico, picante, muito oriental, esta infusão aquece os dias frios de inverno, ajuda a combater pequenas constipações e leva-nos ao longo da rota da seda...
+</p>
+</div>
+
+<a id="leFeu"></a>
+<div class="tonicas">
+<img class="photo" src="../images/leFeu_L.jpg" />
+<h4 class="cha_detail">Le Feu</h4>
+<h5 class="cha_detail">"Arde sem se ver"</h5>
+<p class="cha_detail ingredientes">
+Gengibre, Canela, Damiana</p>
+<p class="cha_detail">Acenda o fogo sob o edredom com esta infusão tónica e impertinente.<br /> A tea for two, for sure.
+</p>
+</div>
+
+
+<a id="tropMange"></a>
+<div class="detox">
+<img class="photo" src="../images/chocolat_L.jpg" />
+<h4 class="cha_detail">Trop mangé de chocolat!</h4>
+<h5 class="cha_detail">Pequeno auxílio digestivo</h5>
+<p class="cha_detail ingredientes">
+Alcaçuz, Angélica, Anis estrelado, Hortelã-pimenta</p>
+<p class="cha_detail">Para reparar um pequeno excesso ou simplesmente pelo prazer das suas notas de anis.</p>
+</div>
+<a id="adieuMonRhume"></a>
+<div class="detox">
+  <img class="photo" src="../images/rhume_L.jpg" />
+  <h4 class="cha_detail">Adieu mon rhume</h4>
+<h5 class="cha_detail">Depressa, logo aos primeiros arrepios de frio!</h5>
+<p class="cha_detail ingredientes">
+Alfazema, Equinácea, Eucalipto, Gengibre, Rosa, Tomilho limão</p>
+<p class="cha_detail">O chá que devemos todos ter em casa por precaução! Tão aromático e rico em eucalipto que pode servir para uma inalação, se apesar de tudo a constipação se instalou (neste caso, preparar em <a href="receitas.html#decoccion">decocção</a>).</p>
+</div>
+<a id="pure"></a>
+<div class="detox">
+<img class="photo" src="../images/pure_L.jpg"  />
+<h4 class="cha_detail">Pure</h4>
+<h5 class="cha_detail">Drenante e purificante</h5>
+<p class="cha_detail ingredientes">
+Alcachofra, Calendula, Orthosiphon stamineus, Rainha dos prados, Segurelha, Urtiga</p>
+<p class="cha_detail">Para o dia a seguir à festa… o quando uma detox é necessária.</p>
+</div>
+<a id="circulez"></a>
+<div class="detox">
+<img class="photo" src="../images/circulez_L.jpg" />
+<h4 class="cha_detail">Circulez!</h4>
+<h5 class="cha_detail">Para cuidar os nossos 160.000 km de vasos sanguíneos</h5>
+<p class="cha_detail ingredientes">
+Arando, Erva de São Roberto, Hibiscus, Rosa, Vinha vermelha</p>
+<p class="cha_detail">Um sabor acidulado e florido para esta mistura de plantas protectoras.</p>
+</div>
+
+<a id="slim"></a>
+<div class="beauty">
+<img class="photo" src="../images/slim_L.jpg"  />
+<h4 class="cha_detail">Slim</h4>
+<h5 class="cha_detail">Livre-se do supérfluo!</h5>
+<p class="cha_detail ingredientes">
+Alcaçuz, Groselha-negra, Pilosela, Rainha dos Prados, Barbas de milho, Vinha vermelha</p>
+<p class="cha_detail">Ao drenar o nos​s​o organismo e combater a retenção de líquidos reencontramos a sensação de um corpo leve e ​modelado.</p>
+</div>
+
+<a id="skin"></a>
+<div class="beauty">
+<img class="photo" src="../images/skin6_L.jpg" />
+<h4 class="cha_detail">Skin</h4>
+<h5 class="cha_detail">A detox da pele</h5>
+<p class="cha_detail ingredientes">Bardana, Alecrim, Calêndula, Hortelã pimenta</p>
+<p class="cha_detail">Um chá de beleza, purificante e adocicante.</p>
+
+</div>
+
+
+
+<!--end of div "main"-->
+</div>
+<div class="spacer_bottom"></div>
+<footer>
+<ul>
+<li><a href="conceito.html">my cha</a></li>
+    <!--<a href="infusoes.html"><li>as infusões</li></a>-->
+    <li><a href="hoje_sinto-me.html">sinto-me...</a></li>
+    <li><a href="receitas.html">receitas</a></li>
+    <li><a href="comprar.html">comprar</a></li>
+    <li><a href="press.html">press</a></li>
+    <li><a href="lojas.html">onde</a></li>
+    <li><a href="contacto.html">contacto</a></li>
+</ul>
+</footer>
+  
+  
+</div>
+</body>
+</html>
