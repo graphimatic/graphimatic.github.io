@@ -346,18 +346,17 @@ ul#idioma li a:active {
 .tea_family a:nth-of-type(4) span {background-color: #f59415;}
 #tea_detail {
 	/*width: 80%;*/
-	margin-top: 5em;
-}
-#tea_detail {
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding: 2em;
+	padding: 0 2em;
 }
 #tea_detail div {
-	width: 32%;
+	/*width: 32%;*/
+	flex-basis:32%; /* width */
 	margin-bottom: .75em;
 	background-color:#fff;
+	/*height:475px;*/
 }
 .C h4 {color: #8ebbdd;}
 .T h4 {color: #ff2858;}
@@ -393,17 +392,30 @@ ul#idioma li a:active {
 	padding-left: 4px;
 	padding-right: 4px;
 }
-input, textarea {
+/*input, textarea {
 	background-color: #fff;
 	width: 100%;
 	border: thin solid  #DDD;
 	margin-bottom: 7px;
 	margin-top: 4px;
 	padding: 3px 0px;
+}*/
+.add-to-cart {
+    text-transform: uppercase;
+	font-family: "montserrat", arial, sans-serif;
+	background-color: #e7efc8;
+	color: #566835;
+	border: 1px solid #a4ba8f;
+	font-size: .75em;
+	padding: .5em;
+	letter-spacing: .05em;
 }
+/*.store main input {
+	border: none;
+}*/
 /*temp styles start*/
 
-#tea_detail h4, .tea_thumb h4 {
+#tea_detail h4 {
 	margin: 1.75em 0 .25em 4%;
 	line-height: 12px;
 	}
@@ -423,7 +435,10 @@ input, textarea {
 	margin: 4% 4%;
 	font-size: .9em;
 }
-
+/*input[type=image]{
+	width: auto;
+	float: right;
+	}*/
 .myCha{
 	text-transform:uppercase;
 	color: #000;
@@ -452,12 +467,18 @@ p.composicao {
 	color: #767a72;
 	font-style: italic;
 	}
+.buy {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.75em 4% .25em 4%;
+	}
 p.price {
-	font-size: .65em;
+	font-size: .75em;
 	font-weight:700;
 	color:#47565d;
+	align-self: center;
 	/*margin-bottom: 2%;*/
-	padding: 8% 0% 0% 5%;
+	/*padding: 8% 0% 0% 5%;*/
 	}
 p.select_size{
 	font-size: 11px;
@@ -474,16 +495,7 @@ img.photo1 {
 	width:92%;
 	display: block; /*this fixes spacing after the img*/
 	}
-div.tea_thumb {
-	background-color: #fff;
-	flex-basis:23%; /* width */
-	margin-bottom: 25px;
-	height:475px;
-	}
-.tea_thumb input {
-	width: auto;
-	float: right;
-	}
+
 
 /*temp styles end*/
 
