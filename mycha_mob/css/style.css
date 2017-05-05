@@ -31,16 +31,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-family: "cardo", Georgia, "Times New Roman", serif;
-	font-size: 4.25em;
-	/*line-height: 4.25em;*/
-	text-align: center;
+	font-size: 3.75em;
+	/*line-height: 1em;*/
+	/*text-align: center;*/
 	color: #fff;
-	/*margin: 200px 0;*/
 	border: solid 8px;
-	align-self: center;
-	display: inline;
+	/*align-self: center;*/
+	/*display: inline;*/
 	background-color: rgba(133, 186, 122, 0.1);
-	padding: 7px 80px;
+	padding: 5px 68px;
 	}
 h2{
     font-family: "montserrat", arial, sans-serif;
@@ -141,9 +140,9 @@ main {
 	}
 .store main section {
 	flex-wrap: wrap;
-	width: 90%;
-	margin: auto;
-	justify-content: flex-start;
+	/*width: 75%;*/
+	/*margin: auto;*/
+	justify-content: space-between;
 	/*align-items: stretch;*/
 	}
 .about main {
@@ -301,19 +300,21 @@ ul#idioma li a:active {
 }*/
 .tea_family {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	width:80%;
+	/*flex-wrap: nowrap;*/
+	/*justify-content: center;*/
+	margin-bottom: 4em;
+	width:75%;
 	/*margin-top: 3em;*/
 }
 .tea_family a {
-	margin: 0 1%;
+	/*margin: 0 1%;*/
 	background-color: #fff;
-	margin-top: 1em;
+	/*margin-top: 1em;*/
 	font-family: montserrat, sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: .05em;
+	flex-basis: 23%;
 	
 }
 .tea_family span {
@@ -345,11 +346,11 @@ ul#idioma li a:active {
 .tea_family a:nth-of-type(3) span {background-color: #d0d947;}
 .tea_family a:nth-of-type(4) span {background-color: #f59415;}
 #tea_detail {
-	/*width: 80%;*/
+	width: 65%;
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 0 2em;
+	/*justify-content: space-around;*/
+	/*padding: 0 2em;*/
 }
 #tea_detail div {
 	/*width: 32%;*/
