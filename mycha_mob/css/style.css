@@ -55,7 +55,8 @@ h3 {
 	font-family: "montserrat", arial, sans-serif;
 	font-size: 1.5em;
 	letter-spacing: .05em;
-	color: #a5b703;
+	/*color: #a5b703;*/
+	color: #8b9f03;
 	text-transform: uppercase;
 	/*margin:0 0 2% 0;*/
 	}
@@ -369,8 +370,9 @@ ul#idioma li a:active {
 .detox {background-color: #d0e65f;}
 .beauty {background-color: #ff8131;}*/
 #terms {
-	width: 71%;
-	margin: 0 auto;
+	width: 100%;
+	/*margin: 0 auto;*/
+	margin-top:2em;
 }
 #mad_mimi_signup_form{
 	width: 300px;
