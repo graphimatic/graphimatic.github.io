@@ -66,8 +66,7 @@ main {
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	position: relative;
-	top:70px;
+	margin-top:70px;
 	
 }
 .lg_image div {
