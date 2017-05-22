@@ -1,0 +1,142 @@
+html {
+	font-size:18px;
+	line-height: 1.4;
+	font-family: Helvetica, Arial, sans-serif;
+}
+body{
+
+}
+header {
+	background: url(../images/glasses-bg.png);
+	background-size: cover;
+	height:600px;
+	padding-top: 1rem
+	
+}
+#aqua_bar {
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 960px;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	
+}
+nav {
+	
+	
+}
+nav ul {
+	color: #fff;
+	margin: 1rem 2rem;
+}
+nav ul li {
+	display:inline-block;
+	margin-left:2rem;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+h2 {
+	color: white;
+	background-color: cadetblue;
+	padding: .5rem 1.25rem;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#logo {
+	
+	display: flex;
+	align-items: center;
+}
+#logo img {
+	height: 1.5rem;
+}
+#logo span{
+	font-size: 1rem;
+	margin-left: 1rem;
+	color: #fff;
+	
+}
+.tagline_wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+#tagline {
+	background-color: white;
+	padding: 1.5rem 5rem;
+	margin-top: 10rem;
+	display:inline-block;
+	float: right;
+	margin-right: -4rem;
+}
+
+.highlight_wrapper {
+	display: flex;
+}
+.highlight {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: center;
+	text-align: center;
+	margin: 3rem;
+	height: 8rem;
+	
+}
+.highlight img {
+	background-color: aliceblue;
+	width: 5rem;
+}
+#exams  {
+	width: 3.5rem;
+}
+#fittings {
+	width: 5rem;
+}
+#truck {
+	width: 5rem;
+}
+.xtra-info {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3rem;
+	max-width: 960px;
+}
+.xtra-info h2 {
+	width: 10rem;
+}
+.xtra-info div{
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin: 0 2.5%;
+}
+.xtra-info div p {
+	margin-top: 1rem;
+}
+footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: azure;
+	width: 960px;
+	margin: 5rem auto 0 auto;
+	padding: 4rem;
+}
+footer img {
+	height: 1.5rem;
+}
+footer span {
+	margin-left: 1rem;
+}
