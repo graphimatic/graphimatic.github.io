@@ -3,7 +3,7 @@
 <head>
 	<title>Colmar Academy</title>
 	<meta charset="UTF-8">
-	<link type="text/css" href="./resources/css/reset.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet"> 
 	<link type="text/css" href="./resources/css/style.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -24,8 +24,10 @@
 			</nav>
 		</div>
 		<div class="banner">
-			<img src="./resources/images/banner.jpg" alt="students" />
-			<div>
+			<div class="left">
+				<img src="./resources/images/banner.jpg" alt="students" />
+			</div>
+			<div class="right">
 				<h1>Learn something new everyday</h1>
 				<h3>Explore what you can engage in at Colmar Academy!</h3>
 				<div class="button">Start here</div>
@@ -34,13 +36,13 @@
 	</header>
 	<main>
 		<section id="intro">
-			<div>
+			<div class="left">
 				<img src="./resources/images/information-main.jpg" alt="man reading" />
 				<h2>It doesn't hurt to keep practicing</h2>
 				<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right."</p>
 				<span class="caption">Emanuel, Senior Strategist at Hiring.com</span>
 			</div>
-			<div id="callout_column">
+			<div class="right callout_column">
 				<div class="horz_callout">
 					<img src="./resources/images/information-orientation.jpg" alt="on campus 1" />
 					<div>
@@ -70,48 +72,48 @@
 		<section id="start_learning">
 			<h2>Start learning</h2>
 			<div>
-				<div>
-					<img src=".resources/images/course-software.jpg" alt="desk with two computers" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-software.jpg" alt="desk with two computers" />
 					<div>
 						<h4>Software engineering</h4>
 						<span class="courses">courses</span>
 						<p>Web development, Mobile development, iOT, APIs</p>
 					</div>
 				</div>
-				<div>
-					<img src=".resources/images/course-computer-art" alt="smartphone close-up" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-computer-art.jpg" alt="smartphone close-up" />
 					<div>
 						<h4>Computer art</h4>
 						<span class="courses">courses</span>
 						<p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
 					</div>
 				</div>
-				<div>
-					<img src=".resources/images/course-design.jpg" alt="person holding a camera" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-design.jpg" alt="person holding a camera" />
 					<div>
 						<h4>Design</h4>
 						<span class="courses">courses</span>
 						<p>User Experience Design, User Research, Visual Design</p>
 					</div>
 				</div>
-				<div>
-					<img src=".resources/images/course-data.jpg" alt="laptop / data" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-data.jpg" alt="laptop / data" />
 					<div>
 						<h4>Data</h4>
 						<span class="courses">courses</span>
 						<p>Data Science, Bog Data, SQL, Data Visualization</p>
 					</div>
 				</div>
-				<div>
-					<img src=".resources/images/course-business.jpg" alt="chess board" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-business.jpg" alt="chess board" />
 					<div>
 						<h4>Business</h4>
 						<span class="courses">courses</span>
 						<p>Product Development, Business Development, Startup</p>
 					</div>
 				</div>
-				<div>
-					<img src=".resources/images/course-marketing.jpg" alt="smart watch" />
+				<div class="vert_callout">
+					<img src="./resources/images/course-marketing.jpg" alt="smart watch" />
 					<div>
 						<h4>Marketing</h4>
 						<span class="courses">courses</span>
@@ -123,34 +125,41 @@
 		<section id="thesis_exhibit">
 			<h2>Thesis exhibit</h2>
 			<div>
-				<video autoplay="" muted="" loop="">
-					 <source src="./resources/videos/thesis.mp4" type="video/mp4">
-				</video>
-				<h4>Reimagine urban</h4>
-				<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road."</p>
-			</div>
-			<div>
-				<div class="horz_callout">
-					<img src="./resources/images/thesis-fisma.jpg" alt="prototype sketching" />
-					<h4>Fisma: design and</h4>
-					<p>Designer showcase of new prototype product</p>
-				</div><div class="horz_callout">
-					<img src="./resources/images/thesis-now-and-then.jpg" alt="skyline and Chrisler building" />
-					<h4>Now and then</h4>
-					<p>Research study about New York</p>
+				<div class="left">
+					<video autoplay="" muted="" loop="">
+						 <source src="./resources/videos/thesis.mp4" type="video/mp4">
+					</video>
+					<h4>Reimagine urban</h4>
+					<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road."</p>
+				</div>
+				<div class="right callout_column">
+					<div class="horz_callout">
+						<img src="./resources/images/thesis-fisma.jpg" alt="prototype sketching" />
+						<div>
+							<h4>Fisma: design and</h4>
+							<p>Designer showcase of new prototype product</p>
+						</div>
+					</div>
+					<div class="horz_callout">
+						<img src="./resources/images/thesis-now-and-then.jpg" alt="skyline and Chrisler building" />
+						<div>
+							<h4>Now and then</h4>
+							<p>Research study about New York</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>	
 	</main>
 	<footer>
-		<div>
+		<!-- <div> -->
 			<span>© 2016 Colmar Academy. All rights reserved.</span>
 			<ul>
 				<li>Terms</li>
 				<li>Privacy</li>
 			</ul>
 
-		</div>
+		<!-- </div> -->
 	</footer>
 </body>
 </html>
