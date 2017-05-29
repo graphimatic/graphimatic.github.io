@@ -104,7 +104,7 @@ div.button {
 	background-color: #dadfe3;
 } 
 .callout_column img {
-	width: 35%;
+	min-width: 35%;
 	margin: 1.125em;
 }
 .horz_callout img + div {
@@ -176,4 +176,37 @@ footer span, footer ul {
 footer ul li {
 	display: inline-block;
 	padding: 0 .5em;
+}
+/*@media only screen and (max-width:1220px) { 
+
+}*/
+@media only screen and (max-width:1000px) {
+	#start_learning > div {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.vert_callout {
+		flex-basis: 45%;
+		/*margin: 16px;*/
+	}
+	.banner, #intro, #thesis_exhibit > div:first-of-type {
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner > div:nth-child(2) {
+	flex-direction: row wrap;
+	width: 60%;
+	margin-left:0;
+	}
+	header h1 {
+		width: 100%;
+		padding-top:0;
+		text-align: center;
+	}
+	header h2 {
+		text-align: center;
+	}
+	#thesis_exhibit .callout_collumn {
+		width:60%;
+	}
 }
