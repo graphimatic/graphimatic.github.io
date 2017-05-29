@@ -9,29 +9,25 @@ body{
 header {
 	background: url(../images/glasses-bg.png);
 	background-size: cover;
-	height:600px;
-	padding-top: 1rem
-	
+	height:30rem;
+	padding-top: 1rem;
+	background-position: center;
 }
 #aqua_bar {
 	background-color: cadetblue;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 960px;
+	width: 888px;
 	margin: 0 auto;
 	padding: 1rem 2rem;
 	
 }
-nav {
-	
-	
-}
-nav ul {
-	color: #fff;
-	margin: 1rem 2rem;
+.mobile-nav {
+    display: none;
 }
 nav ul li {
+	color: #fff;
 	display:inline-block;
 	margin-left:2rem;
 }
@@ -78,7 +74,7 @@ h2 {
 	margin-top: 10rem;
 	display:inline-block;
 	float: right;
-	margin-right: -4rem;
+	margin-right: -2rem;
 }
 
 .highlight_wrapper {
@@ -92,12 +88,11 @@ h2 {
 	text-align: center;
 	margin: 3rem;
 	height: 8rem;
-	
-}
-.highlight img {
-	background-color: aliceblue;
 	width: 5rem;
 }
+/*.highlight img {
+	width: 5rem;
+}*/
 #exams  {
 	width: 3.5rem;
 }
@@ -110,9 +105,8 @@ h2 {
 .xtra-info {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 3rem;
 	max-width: 960px;
-}
+} 
 .xtra-info h2 {
 	width: 10rem;
 }
@@ -139,4 +133,97 @@ footer img {
 }
 footer span {
 	margin-left: 1rem;
+}
+
+@media only screen and (max-width:1000px) {
+	header {
+		padding-top: 0;
+		height: 22rem;
+	}
+	#aqua_bar {
+		width: 100%;
+		padding: 1rem 0;
+	}
+	nav {
+		margin-right: 5%;
+	}
+	#logo {
+		margin-left: 5%;
+	}
+	.tagline_wrapper {
+		width: 100%;
+	}
+	h1 {
+		font-size: 1.33rem;
+	}
+	#tagline {
+		padding: .75rem 4rem;
+		margin-right: 2rem;
+		margin-top: 5em;
+	}
+}
+@media only screen and (max-width: 745px) {
+
+	header {
+		background-position: 20%;
+		height: 17rem;
+	}
+	nav ul {
+		display: none;
+	}
+	.mobile-nav {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+	#tagline {
+		width: 100%;
+		padding: 1rem 0;
+		margin: 9rem 0 0;
+		text-align: center;
+	}
+	h1 {
+		font-size: 1rem;
+	}
+	#logo span {
+		display: none;
+	}
+	.highlight_wrapper {
+		flex-direction: column;
+		align-items: center;
+		padding: 3rem 0;
+	}
+	.highlight {
+		height: 6rem;
+		margin: .77rem 0;
+		justify-content: center;
+	}
+	.highlight span {
+		font-size: .77rem;
+		padding-top: 10px;
+	}
+	.xtra-info {
+		flex-direction: column;
+	}
+	.xtra-info div {
+		width: 100%;
+		margin: 0;
+	}
+	.xtra-info h2 {
+		width: 100%;
+		text-align: center;
+		padding: 1rem 0;
+	}
+	.xtra-info div p {
+		font-size: .77rem;
+		margin: 1rem .75rem 4rem;
+	}
+	footer {
+	justify-content: center;
+	width: 100%;
+	padding: 4rem 0;
+}
+	footer span {
+		display: none;
+	}
 }
