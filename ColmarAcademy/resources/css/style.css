@@ -44,6 +44,9 @@ header > div:first-child {
 	align-items: center;
 	padding: 0 24px;
 }
+.mobile-nav ul{
+	display: none;
+}
 .banner {
 	display: flex;
 	background-color: #dadfe3;
@@ -194,19 +197,67 @@ footer ul li {
 		align-items: center;
 	}
 	.banner > div:nth-child(2) {
-	flex-direction: row wrap;
-	width: 60%;
-	margin-left:0;
+		flex-direction: row wrap;
+		width: 60%;
+		margin-left:0;
 	}
 	header h1 {
 		width: 100%;
 		padding-top:0;
-		text-align: center;
 	}
-	header h2 {
+	header h1, header h3 {
 		text-align: center;
 	}
 	#thesis_exhibit .callout_collumn {
 		width:60%;
 	}
+}
+@media only screen and (max-width: 804px) {
+	h1 {
+		font-size: 2em;
+	}
+	h3 { 
+		font-size: 1.25em; 
+	}
+	.banner > div:nth-child(2) , .left {
+		width: 90%;
+	}
+	#logo span {
+		display: none;
+	}
+	 .vert_callout {
+	 	flex-basis: 100%;
+	 }
+	 .vert_callout img {
+	 	display: none;
+	 }
+	 .vert_callout h4 {
+	 	padding-top:0;
+	 }
+	 #intro .callout_column, #thesis_exhibit .callout_column {
+	 	width: 90%;
+	 }
+	 nav ul {
+		display: none;
+	}
+	.mobile-nav ul{
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+	.mobile-nav ul li{
+		padding:.25em 0 .25em .75em ;
+	}
+	.mobile-nav li img {
+		height: 1.75em;
+	}
+	.callout_column img {
+    min-width: 25%;
+	}
+	.horz_callout img + div {
+    width: 75%;
+	}
+}
+@media only screen and (max-width: 500px) {
+
 }
