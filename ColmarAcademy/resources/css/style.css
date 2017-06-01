@@ -41,7 +41,7 @@ header > div:first-child {
 	right:0;
 	left: 0;
 	background-color: #fff;
-	border-bottom: solid 1px #373642;
+	border-bottom: solid 1px #dadfe3;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -70,7 +70,7 @@ nav ul li {
 	display: inline-block;
 }
 .banner {
-	margin-top: 64px;
+	margin-top: 65px;
 	display: flex;
 	background-color: #dadfe3;
 	
