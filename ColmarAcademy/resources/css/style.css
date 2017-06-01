@@ -15,7 +15,6 @@ p, h1, h2, h3, h4 {
 h1, h2, h3, h4 {
 	color: #373642;
 	font-weight: 800;
-
 }
 h1 {
 	font-size: 2.5em;
@@ -33,21 +32,45 @@ h4 {
 	font-size: 1.25em;
 	padding: 1em 0 .5em;
 }
-nav ul li {
-	display: inline-block;
-}
+
 header > div:first-child {
+	position: fixed;
 	height: 64px;
+	width: 100%;
+	top:0;
+	right:0;
+	left: 0;
 	background-color: #fff;
+	border-bottom: solid 1px #373642;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 24px;
+	z-index: 10;
 }
-.mobile-nav ul{
+
+#logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1.3em;
+}
+#logo span {
+	text-transform: uppercase;
+}
+div#logo span:first-of-type{
+	color: #000;
+	font-weight: bold;
+}
+.mobile-nav {
 	display: none;
 }
+header nav {
+	margin-right: 1.33em;
+}
+nav ul li {
+	display: inline-block;
+}
 .banner {
+	margin-top: 64px;
 	display: flex;
 	background-color: #dadfe3;
 	
@@ -59,17 +82,7 @@ header > div:first-child {
 	margin-left:40px;
 	width: 30%;
 }
-#logo {
-	display: flex;
-	align-items: center;
-}
-#logo span {
-	text-transform: uppercase;
-}
-div#logo span:first-of-type{
-	color: #000;
-	font-weight: bold;
-}
+
 header ul li {
 	margin-left:16px;
 	color: #373642;
@@ -240,12 +253,12 @@ footer ul li {
 	 nav ul {
 		display: none;
 	}
-	.mobile-nav ul{
+	.mobile-nav {
 	    display: block;
 	    width: 100%;
 	    text-align: center;
 	}
-	.mobile-nav ul li{
+	.mobile-nav li{
 		padding:.25em 0 .25em .75em ;
 	}
 	.mobile-nav li img {
@@ -259,5 +272,50 @@ footer ul li {
 	}
 }
 @media only screen and (max-width: 500px) {
-
+	#intro .left, #thesis_exhibit h4, #thesis_exhibit p, #thesis_exhibit .callout_column, .vert_callout span, .vert_callout p, footer ul {
+		display: none;
+	}
+	.banner .left {
+	    width: 100%;
+	    padding: 0;
+	    height: 10em;
+	    overflow: hidden; /*hides tha part of the image that doesn't fit in the height of the div*/
+	}
+	header h1 {
+		padding-top: 1em;
+	}
+	.horz_callout {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.callout_column img {
+		width: 60%;
+	}
+	#intro .callout_column > div:last-child, #thesis_exhibit .callout_column > div:first-child {
+	    background-color: #fff;
+	}
+	.horz_callout img + div {
+		margin-top:0;
+	}
+	.horz_callout h4{
+		padding-top:0;
+	}
+	#start_learning {
+		background-color: #fff;
+	}
+	.vert_callout {
+		margin-top: 0;
+	}
+	.vert_callout > div {
+		background-color: #dadfe3;
+	}
+	#start_learning {
+		padding-bottom: 1em;
+	}
+	#start_learning > div {
+		width:95%;
+	}
+	#thesis_axhibit {
+		padding-top: 0;
+	}
 }
