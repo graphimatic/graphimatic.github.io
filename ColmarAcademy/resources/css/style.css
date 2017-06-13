@@ -120,7 +120,8 @@ div.button {
 	background-color: #dadfe3;
 } 
 .callout_column img {
-	min-width: 35%;
+	/*min-width: 35%;*/
+	/*width: 35%;*/
 	margin: 1.125em;
 }
 .horz_callout img + div {
@@ -129,6 +130,7 @@ div.button {
 }
 .horz_callout {
 	display: flex;
+	align-items: flex-start;
 }
 .read_more {
 	display: block;
@@ -265,10 +267,11 @@ footer ul li {
 		height: 1.75em;
 	}
 	.callout_column img {
-    min-width: 25%;
+	    /*min-width: 25%;*/
+	    width: 25%;
 	}
 	.horz_callout img + div {
-    width: 75%;
+	    width: 75%;
 	}
 }
 @media only screen and (max-width: 500px) {
