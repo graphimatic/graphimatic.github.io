@@ -45,10 +45,10 @@
 		<main>
 			  <h2>The Herbal Teas</h2>
 			  <section class="tea_family">
-			        <a href="javascript:showDiv('calming');">
+			        <a href="#" onclick="togglevisibility('calming');">
 				        <img class="photo1" src="./images2/pillows_cvr.jpg" alt="">
 						<span class="label">calming</span></a>
-					<a href="javascript:showDiv('tonic');">
+					<a class="button" href="#">
 						<img class="photo1" src="./images2/tonics_cvr.jpg" alt="">
 						<span class="label">tonics</span></a>
 					<a href="javascript:showDiv('detox');">
@@ -452,17 +452,11 @@
 			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
 			  crossorigin="anonymous">
 	</script>
-	<script>
-		    function showDiv(displayFamily) {
-		        $('.tea_listings').each(function(index) {
-		            if ($(this).attr("id") == displayFamily) {
-		                $(this).show(200);
-			        }
-		            else {
-	                   $(this).hide(600);
-			        }
-		        });
-			}
-	</script>
+	<script type="text/javascript">
+    function toggleVisibility(newSection) {
+        $(".tea_listings").not("#" + newSection).hide();
+        $("#" + newSection).show();
+    }
+</script>
   </body>
 </html>

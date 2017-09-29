@@ -147,10 +147,7 @@ main {
 	justify-content: space-between;
 	/*align-items: stretch;*/
 	}
-.infusions main section {
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 .about main  {
 	flex-direction: column;
 	width: 75%;
@@ -321,6 +318,10 @@ ul#idioma li a:active {
 	text-align: center;
 	font-size: 1.25em;
 }*/
+/*.infusions main section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
 .tea_family {
 	display: flex;
 	/*flex-wrap: nowrap;*/
@@ -328,6 +329,8 @@ ul#idioma li a:active {
 	margin-bottom: 2em;
 	width:50%;
 	/*margin-top: 3em;*/
+	flex-wrap: wrap;
+    justify-content: space-around;
 }
 .tea_family a {
 	margin: 0 0 1.25em;
@@ -401,6 +404,8 @@ ul#idioma li a:active {
 	flex-wrap: wrap;
 	/*justify-content: space-around;*/
 	/*padding: 0 2em;*/
+	justify-content: space-between;
+	/*align-items: stretch;*/
 }
 .tea_listings > div {
 	flex-basis:32%; /* width */
