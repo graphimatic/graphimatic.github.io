@@ -19,12 +19,12 @@ body.home {
 	-o-background-size: cover;
 	background-size: cover;
 }
-body.about {
-	/*background: url(../images2/leaf_bg.jpg) no-repeat center center fixed;
+body.contact {
+	background: url(../images2/contact_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;*/
+	background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -32,12 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-family: "cardo", Georgia, "Times New Roman", serif;
 	font-size: 3.75em;
-	/*line-height: 1em;*/
-	/*text-align: center;*/
 	color: #fff;
 	border: solid 8px;
-	/*align-self: center;*/
-	/*display: inline;*/
 	background-color: rgba(133, 186, 122, 0.1);
 	padding: 5px 68px;
 	}
@@ -144,7 +140,7 @@ main {
 	flex-wrap: wrap;
 	/*width: 75%;*/
 	/*margin: auto;*/
-	justify-content: space-between;
+	justify-content: space-around;
 	/*align-items: stretch;*/
 	}
 
@@ -224,10 +220,14 @@ ul#idioma li a:hover {
 ul#idioma li a:active {
 	color: #fff;
 }
-#fb {order: 3;
+#basket {order: 3;
 }
 #fb img{
-	max-width: 3.5em;
+	max-width: 2.5em;
+	margin: 6px 1em 0 .5em;
+}
+#basket img {
+	max-width: 4em;
 	margin-right: 2em;
 }
 #mobile {
@@ -236,9 +236,19 @@ ul#idioma li a:active {
 #legal {
 	font-size: .75em;
 	color: #798489;
-	/*text-align: center;
-	clear: left;
-	padding:.5em;*/
+}
+footer div {
+	display: flex;
+	/*align-items: center;*/
+}
+footer span {
+	/*height:5em;*/
+	margin-right: 1em;
+}
+#pp img {
+	max-width: 5em;
+	/*margin: 5px 20px 0 0;*/
+	/*display: inline-block;*/
 }	
 .section_menu {
 	width: 60%;
@@ -427,7 +437,7 @@ ul#idioma li a:active {
 .C h4 {color: #8ebbdd;}
 .T h4 {color: #ff2858;}
 .D h4 {color: #aecf2c;}
-.B h4, .I h4, .T h4 {color: #a7aa95;}
+.B h4, .I h4 {color: #a7aa95;}
 
 .terms main h3 {
 	padding-top: 3em;
@@ -457,24 +467,29 @@ ul#idioma li a:active {
 	padding-left: 4px;
 	width: 200px;
 	float: left;
+	height: 25px;
 	}
 #webform_submit_button{
 	width: auto;
 	font-size: .8em;
 	margin-left: 5px;
 	float: left;
-	color: #000;
+	color: #555657;
 	background-color: #E4E6EA;
-	border: #000 1pt solid;
+	border: #b5b6b7 1pt solid;
 	padding-left: 4px;
 	padding-right: 4px;
+	height: 25px;
+}
+.contact h2 {
+	color:;
 }
 #contact_form {
 	/*color: #fe6f06;*/
 }
 #contact_form hr {
-	/*background-color: #8b9f03;*/
-	background-color: #d4e49d;
+	background-color: #bacc41;
+	/*background-color: #d4e49d;*/
 	height: 4px;
 	border: none;
 	width: 100%;
@@ -482,7 +497,7 @@ ul#idioma li a:active {
 	margin: 0;
 }
 #contact_form p {
-	color: #8b9f03;
+	/*color: #8b9f03;*/
 	width: 100%;
 	margin-bottom: 1em;
 	/*text-align: center;*/
@@ -532,7 +547,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 #tswcomments {
 	width: 100%;
-	border: solid 4px #d4e49d;
+	border: solid 4px #bacc41;
 	margin-top: 3px;
 
 }
@@ -584,6 +599,14 @@ input#tswsubmit {
 	max-width: 15em;
 	max-height: 5em;
 }
+#family_links {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+/*#family_links a:last-child {
+	display: block;
+	margin-top: .5em;
+}*/
 
 /*temp styles start*/
 .tea_listings h4 {
@@ -666,41 +689,16 @@ img.photo1 {
 	body {
 		font-size: 18px;
 	}
-	header section:nth-child(2) {
-		flex-wrap: wrap;
-	}
-	#fb { order: 2;}
-	nav { order: 3;
-		width: 100%;
-		margin-top: .5em;}
+}
+@media only screen and (max-width: 1340px) {
 	h1 {
-		font-size: 70px;
-		line-height: 70px;
+		font-size: 2.75em;
 		border-width: 6px;
-		padding: 5px 40px;
+	    padding: 3px 38px;
 	}
 }
-/*@media only screen and (min-width: 1301px) {
-	.section_menu {
-		width: 100%;
-	}
-	.section_menu a {
-	    width: 12%;
-	    margin: 0.25%;
-	}
-	@media only screen and (max-width: 1300px) {
-		.section_menu {
-		width: 70%;
-	}
-}*/
-/*@media only screen and (max-width: 1210px) {
-	.section_menu div {
-		height: 6em;
-	}
-}*/
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 948px) {
   body {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
@@ -711,45 +709,63 @@ img.photo1 {
   	margin: 0 7px;
   }
   h1 {
-		font-size: 50px;
+	  	font-size: 50px;
 		line-height: 50px;
 		border-width: 5px;
-		padding: 4px 30px;
+		padding-left: 12px;
+		padding-right: 12px;
+		width: 438px;
+		text-align: center;
 	}
   
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:680px) {
+	header section:nth-child(2) {
+		flex-wrap: wrap;
+		margin-top:.5em;
+	}
+	#basket { order: 2;}
+	nav { order: 3;
+		width: 100%;
+		margin-top: .5em;
+		margin-bottom: 1em;
+	}
+	header section:first-child {
+		display: none;
+	}
+}
+@media only screen and (max-width:460px){
 	
 	#mobile {
-  	display: block;
-  }
-  nav {
-  	background-color: #bff141;
-  }
-  nav a {
-  	/*float: none;*/
-  	width: auto;
-  	padding: .5em 0;
-  	display: none;
-  	letter-spacing: .1em;
-  	border: none;
-  	-webkit-transition-property: none;
-  	transition-property: none;
+	  	display: block;
+	}
+	nav {
+		 background-color: #bff141;
+		 margin-bottom:0;
+	}
+	nav a {
+		 width: auto;
+		 padding: .5em 0;
+		 display: none;
+		 letter-spacing: .1em;
+		 border: none;
+		 -webkit-transition-property: none;
+		 transition-property: none;
 
-  }
-  nav:hover a {
-  	display: block;
-  }
-  nav a:hover, nav a:focus, nav a:active {
-	/*color:#de2c52;*/
-    -webkit-transform: none;
-    transform: none;
+	}
+	nav:hover a {
+	  	display: block;
+	}
+	nav a:hover, nav a:focus, nav a:active {
+	    -webkit-transform: none;
+	    transform: none;
 	}
 	h1 {
 		font-size: 40px;
 		line-height: 40px;
 		border-width: 4px;
 		padding: 3px 15px;
+		width: 347px;
 
 	}
 	ul#idioma {
@@ -761,13 +777,10 @@ img.photo1 {
 
 	#signup_email{
 		font-size: .7em;
-		/*width: 200px;*/
 		}
 	#webform_submit_button{
 		font-size: .7em;
 	}
-}
-@media only screen and (max-width:460px) {
 	#logo img {
 		width: 4em;
 		margin-left: 1em;
@@ -776,26 +789,24 @@ img.photo1 {
 		width: 2.5em;
 		margin-right: .7em;
 	}
-
-	#mad_mimi_signup_form {
+	#basket img {
+    max-width: 3.5em;
+    margin-right: 1em;
+	}
+	/*#mad_mimi_signup_form {
 	    width: 240px;
 	    height: 35px;
 	}
-
 	#signup_email{
-		/*font-size: .7em;*/
 		width: 130px;
 		}
 	#webform_submit_button{
-		/*font-size: .7em;*/
 		width: 75px;
-	}
-	ul#idioma {
-		margin: 1em 1em 0 .5em;
-	}
+	}*/
 }
 @media only screen and (max-width: 370px) {
 	h1 {
 		font-size:36px;
+		width: 254px;
 	}
 }

@@ -20,55 +20,53 @@
 			       <div>
 			          <input class="submit" data-choose-list="&#8593; Choose a list" data-default-text="Subscribe" data-invalid-text="&#8593; You forgot some required fields" data-submitting-text="Sending..." id="webform_submit_button" name="commit" type="submit" value="Subscribe"/>
 				       </div>
-				  </form>
-				  <ul id="idioma">
-				    <li><a href="en/index_en.html">en</a></li>
-				    <li><a href="fr/index_fr.html">fr</a></li>
-			    </ul>
+				 </form>
+				 <a id="fb" href="https://www.facebook.com/mychaface">
+					<img src="images/facebook-outline1.png" alt="facebook">
+				</a>
 			</section>
 			<section>
 				<a id="logo" href="index.html">
 					<img src="images/logo1.jpg">
 				</a>
 				<nav>
-					<a id="mobile">menu&nbsp;&nbsp;&#9776;</a>
 					<a href="./infusions.html">infusions</a>
 					<a href="./about.html">about</a>
 					<a href="./buy.html">buy</a>
 					<a href="./contact.html">contact</a>
 				</nav>
-				<a id="fb" href="https://www.facebook.com/mychaface">
-					<img src="images/facebook-outline1.png" alt="facebook">
-				</a> 
+				<a id="basket" href="http://ww9.aitsafe.com/cf/review.cfm?userid=B7179736&return=www.mycha.org/buy.htm">
+				  	<img src="./images2/basket.gif" />
+				</a>
 			</section>  
 		</header>
 		<main>
 			  <h2>The Herbal Teas</h2>
 			  <section class="tea_family">
-			        <a href="#" onclick="togglevisibility('calming');">
+			        <a href="./calming.html">
 				        <img class="photo1" src="./images2/pillows_cvr.jpg" alt="">
 						<span class="label">calming</span></a>
-					<a class="button" href="#">
+					<a href="./tonic.html">
 						<img class="photo1" src="./images2/tonics_cvr.jpg" alt="">
-						<span class="label">tonics</span></a>
-					<a href="javascript:showDiv('detox');">
+						<span class="label">tonic</span></a>
+					<a href="./little_extras.html">
 						<img class="photo1" src="./images2/little_extras_cvr.jpg" alt="">
 						<span class="label">little extras</span>
 					</a>
-					<a href="javascript:showDiv('beauty');">
+					<a href="./beauty.html">
 						<img class="photo1" src="./images2/flowers2.jpg" alt="">
 						<span class="label">beauty</span>
 					</a>
-					<a href="javascript:showDiv('iced');">
+					<a href="./iced.html">
 						<img class="photo1" src="./images2/iced_tea_cvr.jpg" alt="">
 						<span class="label">iced tea</span>
 					</a>
-					<a href="javascript:showDiv('taylored');">
+					<a href="./taylor_made.html">
 						<img class="photo1" src="./images2/taylor_made_cvr.jpg" alt="">
 						<span class="label">taylor made</span>
 					</a>
 		      </section>
-		      <section class="tea_listings" id="calming">
+		      <!-- <section class="tea_listings" id="calming">
 					  <div class="C" id="calmeChaud">
 						<div class="tea_details">
 							<img class="photo1" src="./images/calme_L.jpg" />
@@ -440,23 +438,13 @@
 					</div>
 				</section>
 				<section class="tea_listings" id="taylored">
-				</section>
+				</section> -->
 		</main>
 		<footer>
 			<p id="legal">&#169;2017 My Cha</p>
 			<a href="./terms.html">Terms &amp; Conditions</a>
 		</footer>
 	  </div>
-	<script
-			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-			  crossorigin="anonymous">
-	</script>
-	<script type="text/javascript">
-    function toggleVisibility(newSection) {
-        $(".tea_listings").not("#" + newSection).hide();
-        $("#" + newSection).show();
-    }
-</script>
+	
   </body>
 </html>
