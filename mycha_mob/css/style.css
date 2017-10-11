@@ -77,7 +77,7 @@ header{
 	/*height: 200px;*/
 	border-bottom: solid #fff thin;
 	}
-header section {
+header section, footer section {
 	display: flex;
 	}
 header section:first-child {
@@ -158,14 +158,21 @@ main {
 	margin: auto;
 	padding-bottom: 3em;
 	}
-	
 footer{
-	display: flex;
-	justify-content: space-between;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
 	background-color: rgba(0,0,0,.8);
 	color: #D0E1E8;
 	width: 100%;
 	padding: .7em 2%;
+	}
+footer section:first-child {
+	display: none;
+	}
+footer section:nth-child(2) {
+	/*width: 100%;*/
+	/*flex-basis: 100%;*/
+	justify-content: space-between;
 	}
 footer a {
 	font-size: .9em;
@@ -237,9 +244,8 @@ ul#idioma li a:active {
 	font-size: .75em;
 	color: #798489;
 }
-footer div {
+#pay_terms{
 	display: flex;
-	/*align-items: center;*/
 }
 footer span {
 	/*height:5em;*/
@@ -249,7 +255,10 @@ footer span {
 	max-width: 5em;
 	/*margin: 5px 20px 0 0;*/
 	/*display: inline-block;*/
-}	
+}
+/*footer section:first-child {
+	flex-basis: 30%;
+}	*/
 .section_menu {
 	width: 60%;
     margin:0 auto;
@@ -458,10 +467,71 @@ footer span {
 	padding-top: 1.5em;
 	padding-bottom: .5em;
 }
+/*contact form styles*/
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    vertical-align: baseline;
+    vertical-align: middle;
+    /*reset*/
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+header button, header input, header select, header textarea {
+	border: 1px solid #b8c9b5;
+	color: #868686;
+}
+footer button, footer input, footer select, footer textarea {
+	border: 1px solid #6c767b;
+	color: #9FB0AD;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    overflow: visible;
+}
+#contact_form input, textarea {
+	border: none;
+	margin-bottom: .5em;
+}
+#contact_form label {
+}
+#tswfbform {
+	width: 650px;
+}
+#tswname, #tswemail {
+	background-color: none;
+}
+#tswcomments {
+	background-color: rgba(255,255,255,.8);
+	/*max-width: 100%;*/
+	/*width: 85%;*/
+}
+#tswcomments {
+	width: 100%;
+	border: solid 4px #bacc41;
+	margin-top: 3px;
+}
+#tswsubmit {
+	width: 33%;
+}/*more styles with add-to-cart*/
+
+/*contact form styles — end*/
+
 #mad_mimi_signup_form{
-	width: 300px;
-	margin: 12px 0 0;
+	width: 314px;
+	margin: 12px 34px 0 0;
+	font-size: .9em;
 	}
+footer #mad_mimi_signup_form{
+	margin: 8px 0 0;
+}
 #signup_email{
 	font-size: .8em;
 	padding-left: 4px;
@@ -474,33 +544,33 @@ footer span {
 	font-size: .8em;
 	margin-left: 5px;
 	float: left;
-	color: #555657;
-	background-color: #E4E6EA;
-	border: #b5b6b7 1pt solid;
-	padding-left: 4px;
-	padding-right: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
 	height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+header #webform_submit_button{
+	background-color: #e8f2d2;
+}
+footer #webform_submit_button{
+	background-color: #000;
 }
 .contact h2 {
 	color:;
 }
 #contact_form {
-	/*color: #fe6f06;*/
 }
 #contact_form hr {
 	background-color: #bacc41;
-	/*background-color: #d4e49d;*/
 	height: 4px;
 	border: none;
 	width: 100%;
-	/*margin: 0 0 1.5em 0;*/
 	margin: 0;
 }
 #contact_form p {
-	/*color: #8b9f03;*/
 	width: 100%;
 	margin-bottom: 1em;
-	/*text-align: center;*/
 }
 #contacts {
 	width: 100%;
@@ -511,52 +581,6 @@ footer span {
 #contacts span{
 	display: block;
 }
-/*contact form styles*/
-textarea {
-    overflow: auto;
-    vertical-align: top;
-    resize: vertical;
-}
-button, input, select, textarea {
-    font-size: 100%;
-    vertical-align: baseline;
-    vertical-align: middle;
-}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-    cursor: pointer;
-    -webkit-appearance: button;
-    overflow: visible;
-}
-#contact_form input, textarea {
-	background-color: transparent;
-	border: none;
-	margin-bottom: .5em;
-}
-#contact_form label {
-	/*color: #8b9f03;*/
-}
-#tswfbform {
-	width: 650px;
-}
-#tswname, #tswemail, #tswcomments {
-	background-color: rgba(255,255,255,.8);
-	/*max-width: 100%;*/
-	/*width: 85%;*/
-}
-#tswemail {
-}
-#tswcomments {
-	width: 100%;
-	border: solid 4px #bacc41;
-	margin-top: 3px;
-
-}
-#tswsubmit {
-	width: 33%;
-}/*more styles with add-to-cart*/
-
-/*contact form styles — end*/
-
 .add-to-cart {
     text-transform: uppercase;
 	font-family: "montserrat", arial, sans-serif;
@@ -733,6 +757,10 @@ img.photo1 {
 	header section:first-child {
 		display: none;
 	}
+	footer section:first-child {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 @media only screen and (max-width:460px){
 	
@@ -766,21 +794,8 @@ img.photo1 {
 		border-width: 4px;
 		padding: 3px 15px;
 		width: 347px;
-
 	}
-	ul#idioma {
-		margin: 1em 2.5em 0 .5em;
-	}
-	#mad_mimi_signup_form {
-	    width: 280px;
-	}
-
-	#signup_email{
-		font-size: .7em;
-		}
-	#webform_submit_button{
-		font-size: .7em;
-	}
+	
 	#logo img {
 		width: 4em;
 		margin-left: 1em;
@@ -793,20 +808,28 @@ img.photo1 {
     max-width: 3.5em;
     margin-right: 1em;
 	}
-	/*#mad_mimi_signup_form {
-	    width: 240px;
-	    height: 35px;
-	}
-	#signup_email{
-		width: 130px;
-		}
-	#webform_submit_button{
-		width: 75px;
-	}*/
 }
 @media only screen and (max-width: 370px) {
 	h1 {
 		font-size:36px;
 		width: 254px;
 	}
+	footer span {
+		width: 15px;
+		overflow: hidden;
+	}
+	footer section:first-child {
+		flex-wrap: wrap;
+	}
+	/*
+	#mad_mimi_signup_form {
+	    width: 280px;
+	}*/
+
+	/*#signup_email{
+		font-size: .7em;
+		}*/
+	/*#webform_submit_button{
+		font-size: .7em;
+	}*/
 }
