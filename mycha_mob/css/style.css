@@ -229,9 +229,15 @@ ul#idioma li a:active {
 }
 #basket {order: 3;
 }
-#fb img{
+/*#fb img{
 	max-width: 2.5em;
 	margin: 6px 1em 0 .5em;
+}*/
+.fb {
+	max-width: 2.5em;
+	margin: 6px 1em 0 .5em;
+	background: url(../images/facebook-outline1.png);
+	background-size: contain;
 }
 #basket img {
 	max-width: 4em;
@@ -800,7 +806,7 @@ img.photo1 {
 		width: 4em;
 		margin-left: 1em;
 	}
-	#fb img{
+	.fb img{
 		width: 2.5em;
 		margin-right: .7em;
 	}
