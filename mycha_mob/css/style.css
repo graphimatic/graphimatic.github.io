@@ -57,16 +57,14 @@ h3 {
 	/*margin:0 0 2% 0;*/
 	}
 h4 {
-	/*font-family: "arvo", Georgia, "Times New Roman", serif;*/
 	text-transform: uppercase;
 	font-weight:700;
-	font-size: .75em;
+	font-size: .8em;
 	letter-spacing: .05em;
-	/*color: #8b9f03;*/
 	color: #a5b703;
 	}
 h5 {
-	font-size: .75em;
+	font-size: .8em;
 	color: #8f9bb0;
 	}
 a {
@@ -113,13 +111,24 @@ nav a {
 nav a:link, nav a:visited {
 	color: #ff2858;
 }
-nav a:hover, nav a:focus, nav a:active {
+header nav a:hover, header nav a:focus, header nav a:active {
 	/*color:#de2c52;*/
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
 }
+nav#family_links a {
+	border-bottom: none;
+	text-decoration: underline;
+}
+nav#family_links a:link, nav#family_links a:visited {
+	
+	color: #fb09a3;
+}
+nav#family_links a:hover, nav#family_links a:focus, nav#family_links a:active {
+	color: #4e0935;
+	color: #8b9f03;	
+}
 main {
-	/*padding-top: 3em;*/
 	display:flex;
 	align-items: center;
 }
@@ -132,25 +141,28 @@ main {
 	flex: 1;
 	flex-direction: column;
 	}
-.store main {
+.store main, .about main {
 	flex-direction: column;	
 	padding-bottom: 1em;
-	}
-.store main section {
-	flex-wrap: wrap;
-	/*width: 75%;*/
-	/*margin: auto;*/
-	justify-content: space-around;
-	/*align-items: stretch;*/
-	}
-
-.about main  {
-	flex-direction: column;
 	width: 75%;
 	margin: auto;
 	}
-.infusions main  {
-	flex-direction: column;
+.store main section {
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+.store main {
+	max-width: 1300px;
+	}
+.infusions main {
+	flex-direction: column;	
+	/*padding-bottom: 1em;*/
+	width: 65%;
+	margin: auto;
+	max-width: 1020px;
+}
+.about main, {
+	max-width: 1140px;
 	}
 .terms main {
 	flex-direction: column;
@@ -202,42 +214,12 @@ footer a:visited, footer a:hover, footer a:active {
     opacity: .95;
     order: 1;
 	}
-ul#idioma{
-    list-style-type: none;
-    float: right;
-    margin: 1em 2.5em 0 2em;
-    font-size: .9em;
-}
-ul#idioma  li{
-	display:inline;
-	/*font-size:11px;*/
-	text-transform:uppercase;
-	margin-right: 2px;
-	}
-ul#idioma li a:link  {
-	text-decoration:underline;
-	color: #666D70;
-}	
-ul#idioma li a:visited {
-	color: #666D70;
-}
-ul#idioma li a:hover {
-	color: #de2c52;
-}	
-ul#idioma li a:active {
-	color: #fff;
-}
 #basket {order: 3;
 }
-/*#fb img{
+
+.fb img{
 	max-width: 2.5em;
 	margin: 6px 1em 0 .5em;
-}*/
-.fb {
-	max-width: 2.5em;
-	margin: 6px 1em 0 .5em;
-	background: url(../images/facebook-outline1.png);
-	background-size: contain;
 }
 #basket img {
 	max-width: 4em;
@@ -338,22 +320,9 @@ footer span {
 .body-copy {
 	margin: 0 0 0 4%;
 	}
-/*.highlight{
-	color: #a7e40d;
-	text-align: center;
-	font-size: 1.25em;
-}*/
-/*.infusions main section {
-    flex-wrap: wrap;
-    justify-content: space-around;
-}*/
 .tea_family {
 	display: flex;
-	/*flex-wrap: nowrap;*/
-	/*justify-content: center;*/
 	margin-bottom: 2em;
-	width:50%;
-	/*margin-top: 3em;*/
 	flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -424,13 +393,10 @@ footer span {
 	color: #a7aa95;
 }
 .tea_listings {
-	width: 65%;
+	/*width: 65%;*/
 	display:flex;
 	flex-wrap: wrap;
-	/*justify-content: space-around;*/
-	/*padding: 0 2em;*/
 	justify-content: space-between;
-	/*align-items: stretch;*/
 }
 .tea_listings > div {
 	flex-basis:32%; /* width */
@@ -454,6 +420,9 @@ footer span {
 .D h4 {color: #aecf2c;}
 .B h4, .I h4 {color: #a7aa95;}
 
+/*.contact_area {
+	width: 35%;
+}*/
 .terms main h3 {
 	padding-top: 3em;
 	padding-bottom: 1.5em;
@@ -502,25 +471,24 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
     overflow: visible;
 }
+#contact_form {
+	width: 40%;
+	max-width: 650px;
+}
 #contact_form input, textarea {
 	border: none;
 	margin-bottom: .5em;
 }
-#contact_form label {
-}
-#tswfbform {
+/*#tswfbform {
 	width: 650px;
-}
+}*/
 #tswname, #tswemail {
 	background-color: none;
-}
-#tswcomments {
-	background-color: rgba(255,255,255,.8);
-	/*max-width: 100%;*/
-	/*width: 85%;*/
+	width: 85%;
 }
 #tswcomments {
 	width: 100%;
+	background-color: rgba(255,255,255,.8);
 	border: solid 4px #bacc41;
 	margin-top: 3px;
 }
@@ -539,7 +507,7 @@ footer #mad_mimi_signup_form{
 	margin: 8px 0 0;
 }
 #signup_email{
-	font-size: .8em;
+	font-size: .9em;
 	padding-left: 4px;
 	width: 200px;
 	float: left;
@@ -562,31 +530,28 @@ header #webform_submit_button{
 footer #webform_submit_button{
 	background-color: #000;
 }
-.contact h2 {
-	color:;
-}
-#contact_form {
-}
 #contact_form hr {
 	background-color: #bacc41;
 	height: 4px;
 	border: none;
 	width: 100%;
-	margin: 0;
+	margin: 0 0 1em 0;
 }
 #contact_form p {
 	width: 100%;
 	margin-bottom: 1em;
 }
+
 #contacts {
-	width: 100%;
+	max-width: 90%;
 	display: flex;
-	justify-content: space-between;
-	margin-top: 2em;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
-#contacts span{
+/*#contacts span{
 	display: block;
-}
+}*/
 .add-to-cart {
     text-transform: uppercase;
 	font-family: "montserrat", arial, sans-serif;
@@ -609,7 +574,7 @@ input#tswsubmit {
 }
 #press {
 	width:100%;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 .logos {
 	/*width: 100%;*/
@@ -622,21 +587,17 @@ input#tswsubmit {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-right: dotted 1px #ff2858;
 }
-.border { border-right: dotted 1px #ff2858; }
-.no_border { border-right-width: 0; }
+.logos span:last-child { border-right-width: 0; }
 .logos img {
-	max-width: 15em;
-	max-height: 5em;
+	max-width: 11em;
+	max-height: 4em;
 }
-#family_links {
+nav#family_links {
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
-/*#family_links a:last-child {
-	display: block;
-	margin-top: .5em;
-}*/
 
 /*temp styles start*/
 .tea_listings h4 {
@@ -653,8 +614,19 @@ input#tswsubmit {
 #conceito, #perfil {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	/*align-items: flex-start;*/
 	padding: 1em;
+}
+#perfil {
+	/*align-items: flex-start;*/
+}
+#matfin1 {
+	background: url(../images/matfin1_L-v.jpg) no-repeat scroll center;
+	background-size: cover;
+}
+#laetitia {
+	background: url(../images/laetitia_L.jpg) no-repeat scroll top;
+	background-size: cover;
 }
 .descricao {
 	color: #767a72;
@@ -677,7 +649,7 @@ h5.cha_detail {
 .cha_detail a:link, .cha_detail a:visited, .cha_detail a:hover, .cha_detail a:active {color: #444;}
 
 p.composicao {
-	font-size: .75em;
+	font-size: .8em;
 	line-height: 1.25em;
 	margin: 2% 4% 0 4%;
 	color: #767a72;
@@ -715,49 +687,35 @@ img.photo1 {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1500px) {
+	.contact h2 {
+		margin-bottom: .75em;
+	}
+	#contact_form p {
+    margin-bottom: .5em;
+	}
+	/*#tswfbform {
+    width: 500px;
+	}*/
+	#tswcomments {
+	height: 240px;
+	}
+	.logos span {
+    height: 4em;
+	}
+}
+@media only screen and (max-width: 1380px) {
 	body {
-		font-size: 18px;
+		font-size: 16px;
 	}
-}
-@media only screen and (max-width: 1340px) {
-	h1 {
-		font-size: 2.75em;
-		border-width: 6px;
-	    padding: 3px 38px;
-	}
-}
-
-@media only screen and (max-width: 948px) {
-  body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-    /*background-image: url(images/background-photo-mobile-devices.jpg);*/
-	font-size: 16px;
-  }
-  nav a {
-  	margin: 0 7px;
-  }
-  h1 {
-	  	font-size: 50px;
-		line-height: 50px;
-		border-width: 5px;
-		padding-left: 12px;
-		padding-right: 12px;
-		width: 438px;
-		text-align: center;
-	}
-  
-}
-@media only screen and (max-width:680px) {
 	header section:nth-child(2) {
 		flex-wrap: wrap;
 		margin-top:.5em;
 	}
 	#basket { order: 2;}
-	nav { order: 3;
+	header nav { order: 3;
 		width: 100%;
-		margin-top: .5em;
+		margin-top: 0;
 		margin-bottom: 1em;
 	}
 	header section:first-child {
@@ -766,18 +724,238 @@ img.photo1 {
 	footer section:first-child {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: .5em;
+	}
+	.fb img {
+	    margin-right: 0;
+	
+	}
+	h1 {
+		font-size: 2.75em;
+		border-width: 6px;
+	    padding: 3px 38px;
+	}
+	h2 {
+		margin-top: 1em;
+		margin-bottom: .7em;
+	}
+	#logo img {
+		width: 4.5em;
+		margin-left: 1em;
+	}
+	#basket img {
+    max-width: 4em;
+    margin-right: 1em;
+	}
+	#contact_form hr {
+		margin-bottom: .5em;
+		height: 3px;
+	}
+	#tswcomments {
+    height: 180px;
+    border-width:3px;
+	}
+	#contacts {
+		margin-top: 1em;
+		margin-bottom: .75em;
+	}
+	.logos img {
+    max-width: 11.25em;
+    max-height: 3.7em;
+	}
+}
+@media only screen and (max-width: 1110px) {
+	#contact_form {
+		width: 50%;
+	}
+	.store main, .about main {
+		width: 90%;
+	}
+	.infusions main {
+		width: 75%;
+	}
+	.logos span {
+		height: 3em;
+    }
+	.logos img {
+	    max-width: 10.5em;
+	    max-height: 3.5em;
+	}
+	#basket img {
+	    max-width: 3.5em;
+	}
+	nav#family_links a {
+		margin: 2px 8px;
+	}
+}
+@media only screen and (max-width: 948px) {
+	  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    /*background-image: url(images/background-photo-mobile-devices.jpg);*/
+	
+	}
+	header nav a {
+	 margin: 0 7px;
+	}
+	h1 {
+	  	font-size: 50px;
+		line-height: 50px;
+		border-width: 5px;
+		padding-left: 12px;
+		padding-right: 12px;
+		width: 438px;
+		text-align: center;
+	}
+	h3 {
+		text-align: center;
+		margin-top: 1.3em;
+		margin-bottom: .5em;
+		line-height: 1.25em;
+	}
+	#conceito h3:nth-of-type(2) {
+		margin-top:.5em;
+	}
+	#contact_form {
+		width: 55%;
+	}
+	.store main, .about main {
+		width: 75%;
+	}
+	.infusions main {
+		width: 85%;
+	}
+	#conceito, #perfil {
+    flex-direction: column;
+	}
+	.photo {
+		height:400px;
+		width: 100%;
+	}
+	.body-copy {
+		margin-right:4%;
+	}
+	.logos img {
+    max-width: 8em;
+    max-height: 2.5em;
+	}
+	.tea_listings > div {
+    flex-basis: 48%;
+	}
+	.tea_family a {
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 800px) {
+	#contact_form {
+		width: 60%;
+	}
+	.store main, .about main {
+		width: 85%;
+	}
+	.logos img {
+    max-width: 7.5em;
+    max-height: 2.5em;
+	}
+	.terms main {
+		width: 75%;
+	}
+	
+}
+@media only screen and (max-width:680px) {
+	body {
+		font-size: 15px;
+	}
+	h2 {
+		font-size:1.75em;
+	}
+	h3 {
+		margin-top: 1em;
+		font-size: 1.25em;
+	}
+	.infusions main {
+		width: 75%;
+	}
+	#contact_form {
+		width: 70%;
+	}
+	#contacts {
+		flex-wrap:wrap;
+	}
+	#tswname, #tswemail {
+		width: 80%;
+	}
+	#laetitia {
+		height: 300px;
+	}
+	.logos img {
+	    max-width: 6.5em;
+	    max-height: 2.2em;
+	}
+	.logos {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.logos span {
+		width: 49.5%;
+		border: none;
+		background-color: #fff;
+		height: 130px;
+	}
+	.logos span:nth-child(n+3) {
+		margin-top: 5px;
+	}
+	.logos img {
+	    max-width: 8em;
+	    max-height: 3.2em;
+	}
+	.tea_family a {
+		flex-basis: 48%;
+	}
+	nav#family_links {
+    margin-top: 1em;
+    margin-bottom: .5em;
+	}
+	#error {
+		margin: 0 2em;
+	}
+
+}
+@media only screen and (max-width: 520px){
+	.store main  {
+		width: 75%;
+	}
+	.infusions main {
+		width: 85%;
+	}
+	.bullet {
+		display: none;
+	}
+	#tswsubmit {
+    width: 50%;
+	}
+	#matfin1 {
+		height: 300px;
+	}
+	#laetitia {
+		height: 260px;
+	}
+	.tea_listings > div {
+    flex-basis: 100%;
+	}
+	.terms main {
+		width: 85%;
 	}
 }
 @media only screen and (max-width:460px){
-	
 	#mobile {
 	  	display: block;
 	}
-	nav {
+	header nav {
 		 background-color: #bff141;
 		 margin-bottom:0;
 	}
-	nav a {
+	header nav a {
 		 width: auto;
 		 padding: .5em 0;
 		 display: none;
@@ -785,12 +963,11 @@ img.photo1 {
 		 border: none;
 		 -webkit-transition-property: none;
 		 transition-property: none;
-
 	}
-	nav:hover a {
+	header nav:hover a {
 	  	display: block;
 	}
-	nav a:hover, nav a:focus, nav a:active {
+	header nav a:hover, header nav a:focus, header nav a:active {
 	    -webkit-transform: none;
 	    transform: none;
 	}
@@ -801,41 +978,103 @@ img.photo1 {
 		padding: 3px 15px;
 		width: 347px;
 	}
-	
 	#logo img {
 		width: 4em;
 		margin-left: 1em;
-	}
-	.fb img{
-		width: 2.5em;
-		margin-right: .7em;
 	}
 	#basket img {
     max-width: 3.5em;
     margin-right: 1em;
 	}
+	.about main {
+		width: 90%;
+	}
+	.store main  {
+		width: 85%;
+	}
+	#contact_form {
+		width: 80%;
+	}
+	#tswcomments {
+    height: 160px;
+	}
+	#matfin1 {
+		height: 280px;
+	}
+	#laetitia {
+		height: 230px;
+	}
+	.logos span {
+		/*width: 49%;*/
+		height: 100px;
+	}
+	.logos span:nth-child(n+3) {
+		margin-top: 4px;
 }
 @media only screen and (max-width: 370px) {
 	h1 {
 		font-size:36px;
 		width: 254px;
 	}
+	h2 {
+		font-size: 1.5em;
+		margin-top: .75em;
+		margin-bottom: .5em;
+	}
+	header nav {
+		margin-top: .1em;
+	}
+	footer {
+		padding-bottom: .2em;
+	}
 	footer span {
-		width: 15px;
+		width: 18px;
 		overflow: hidden;
 	}
 	footer section:first-child {
-		flex-wrap: wrap;
+		/*flex-wrap: wrap;*/
+		margin-bottom: 0em;
+		/*flex-direction: column;*/
 	}
-	/*
-	#mad_mimi_signup_form {
-	    width: 280px;
-	}*/
-
-	/*#signup_email{
-		font-size: .7em;
-		}*/
-	/*#webform_submit_button{
-		font-size: .7em;
-	}*/
+	.store main, .infusions main  {
+		width: 90%;
+	}
+	#signup_email {
+		width: 168px;
+	}
+	#webform_submit_button {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.fb {
+		align-self: flex-end;
+		margin-right: .25em;
+	}
+	footer a {
+		font-size:.75em;
+	}
+	#logo img {
+		width: 3.5em;
+		margin-left: .75em;
+	}
+	#basket img {
+	    max-width: 3em;
+	    margin-right: .75em;
+	}
+	#matfin1 {
+		height: 250px;
+	}
+	#laetitia {
+		height: 190px;
+	}
+	.logos img {
+	    max-width: 7em;
+	}
+	.tea_family a {
+		font-size: .9em;
+	}
+	nav#family_links {
+    margin-top: .75em;
+    margin-bottom: .25em;
+	}
 }

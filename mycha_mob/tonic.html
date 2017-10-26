@@ -20,7 +20,7 @@
 			          <input class="submit" data-choose-list="&#8593; Choose a list" data-default-text="Subscribe" data-invalid-text="&#8593; You forgot some required fields" data-submitting-text="Sending..." id="webform_submit_button" name="commit" type="submit" value="Subscribe"/>
 				       </div>
 				 </form>
-				 <a id="fb" href="https://www.facebook.com/mychaface">
+				 <a class="fb" href="https://www.facebook.com/mychaface">
 					<img src="images/facebook-outline1.png" alt="facebook">
 				</a>
 			</section>
@@ -29,6 +29,7 @@
 					<img src="images/logo1.jpg">
 				</a>
 				<nav>
+					<a id="mobile">menu&nbsp;&nbsp;&#9776;</a>
 					<a href="./infusions.html">infusions</a>
 					<a href="./about.html">about</a>
 					<a href="./buy.html">buy</a>
@@ -145,20 +146,36 @@
 						</div>
 					</div>
 			</section>
-			<div id="family_links">
-					<nav>
+					<nav id="family_links">
 						<a href="./calming.html">calming</a>
-						<a href="#">little extras</a>
+						<a href="./detox.html">little extras</a>
 						<a href="#">iced tea</a>
 						<a href="./beauty.html">beauty</a>
 						<a href="#">taylor made</a>
-						<a href="#">see all</a>
+						<a href="./buy.html">see all</a>
 					</nav>
-				</div>
 		</main>
 		<footer>
+			<section>
+				<form action="https://madmimi.com/signups/subscribe/44881" id="mad_mimi_signup_form" method="post" target="_blank">
+			       <div class="required"><!--<label for="signup_email">Email</label><br/>-->
+			          <input  class="required" data-invalid-email="This field is invalid" data-required-field="This field is required" id="signup_email" name="signup[email]" placeholder=" insert your email" type="text"/>
+			       </div>
+			       <div>
+			          <input class="submit" data-choose-list="&#8593; Choose a list" data-default-text="Subscribe" data-invalid-text="&#8593; You forgot some required fields" data-submitting-text="Sending..." id="webform_submit_button" name="commit" type="submit" value="Subscribe"/>
+				       </div>
+				 </form>
+				 <a class="fb" href="https://www.facebook.com/mychaface">
+					<img src="images/facebook-outline_grey.png" alt="facebook">
+				</a>
+			</section>
+			<section>
 			<p id="legal">&#169;2017 My Cha</p>
-			<a href="./terms.html">Terms &amp; Conditions</a>
+			<div id="pay_terms">
+				<span id="pp"><img src="./images2/ppcom-grey.png" alt="PayPal Logo"></span>
+				<a href="./terms.html">Terms &amp; Conditions</a>
+			</div>
+		</section>
 		</footer>
 	  </div>
   </body>
