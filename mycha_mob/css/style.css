@@ -10,7 +10,9 @@ body {
 	font-size: 18px;
 	line-height: 1.5;
 	color: #444;
-	
+}
+li {
+	list-style-type: none;
 }
 body.home {
 	background: url(../images2/packages_bg.jpg) no-repeat center center fixed;
@@ -25,6 +27,9 @@ body.contact {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+body.infusions {
+	background-color: #fdfefa;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -141,7 +146,7 @@ main {
 	flex: 1;
 	flex-direction: column;
 	}
-.store main, .about main {
+.store main, .about main, .tailor main {
 	flex-direction: column;	
 	padding-bottom: 1em;
 	width: 75%;
@@ -161,7 +166,7 @@ main {
 	margin: auto;
 	max-width: 1020px;
 }
-.about main, {
+.about main, .tailor main {
 	max-width: 1140px;
 	}
 .terms main {
@@ -173,7 +178,8 @@ main {
 footer{
 	/*display: flex;*/
 	/*justify-content: space-between;*/
-	background-color: rgba(0,0,0,.8);
+	/*background-color: rgba(0,0,0,.8);*/
+	background-color: rgba(210, 227, 198, 0.7);
 	color: #D0E1E8;
 	width: 100%;
 	padding: .7em 2%;
@@ -317,6 +323,15 @@ footer span {
 .photo {
 	width:65%;
 }
+/*.photo2 {
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	padding:1em;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}*/
 .body-copy {
 	margin: 0 0 0 4%;
 	}
@@ -598,27 +613,8 @@ nav#family_links {
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
-
-/*temp styles start*/
-.tea_listings h4 {
-	margin: 1.75em 0 .25em 4%;
-	line-height: 12px;
-	}
-.tea_listings h5 {
-	margin: 0 4% 5% 4%;
-}
-.tea_listings .descricao {
-	margin: 4% 4%;
-	font-size: .9em;
-}
-#conceito, #perfil {
-	display: flex;
-	flex-direction: row;
-	/*align-items: flex-start;*/
-	padding: 1em;
-}
-#perfil {
-	/*align-items: flex-start;*/
+.bullet {
+	list-style-image: url(../images/arrow_bullet.png);
 }
 #matfin1 {
 	background: url(../images/matfin1_L-v.jpg) no-repeat scroll center;
@@ -626,6 +622,10 @@ nav#family_links {
 }
 #laetitia {
 	background: url(../images/laetitia_L.jpg) no-repeat scroll top;
+	background-size: cover;
+}
+#hands_book {
+	background: url(../images2/tailor-made_wide.jpg) no-repeat scroll left bottom;
 	background-size: cover;
 }
 .descricao {
@@ -636,6 +636,40 @@ nav#family_links {
 	color: #000;
 	font-size: .95em;
 }
+.cha_detail a:link, .cha_detail a:visited, .cha_detail a:hover, .cha_detail a:active {
+	color: #444;
+	text-decoration: underline;
+}
+#tailor-made li {
+	margin-top: .75em;
+	line-height: 1.25em;
+}
+#tailor-made li:last-child {
+	margin-top: 2em;
+}
+
+/*temp styles start*/
+.tea_listings h4 {
+	margin: 1.75em 0 .25em 4%;
+	line-height: 12px;
+}
+.tea_listings h5 {
+	margin: 0 4% 5% 4%;
+}
+.tea_listings .descricao {
+	margin: 4% 4%;
+	font-size: .9em;
+}
+#conceito, #perfil, #tailor-made {
+	display: flex;
+	flex-direction: row;
+	/*align-items: flex-start;*/
+	padding: 1em;
+}
+#perfil {
+	/*align-items: flex-start;*/
+}
+
 .bold_name {
 	color: #8b9f03;
 }
@@ -646,7 +680,6 @@ h5.cha_detail {
 	/*padding-top: 1%;*/
 	margin-left: 4%;
 	}
-.cha_detail a:link, .cha_detail a:visited, .cha_detail a:hover, .cha_detail a:active {color: #444;}
 
 p.composicao {
 	font-size: .8em;
@@ -708,6 +741,55 @@ img.photo1 {
 	body {
 		font-size: 16px;
 	}
+	h1 {
+		font-size: 2.75em;
+		border-width: 6px;
+	    padding: 3px 38px;
+	}
+	h2 {
+		margin-top: 1em;
+		margin-bottom: .7em;
+	}
+	#logo img {
+		width: 4.25em;
+		margin-left: 1em;
+	}
+	#basket img {
+    max-width: 3.75em;
+    margin-right: 1em;
+	}
+	.fb img {
+    width: 35px;
+	}
+	#contact_form hr {
+		margin-bottom: .5em;
+		height: 3px;
+	}
+	#tswcomments {
+    height: 180px;
+    border-width:3px;
+	}
+	#contacts {
+		margin-top: 1em;
+		margin-bottom: .75em;
+	}
+	.logos img {
+    max-width: 11.25em;
+    max-height: 3.7em;
+	}
+	#pp img {
+    max-width: 4em;
+	}
+	footer a {
+    font-size: .85em;
+	}
+	footer {
+		padding-top:.4em;
+		padding-bottom: .4em;
+	}
+}
+@media only screen and (max-width: 1110px) {
+/* header / footer elements start*/
 	header section:nth-child(2) {
 		flex-wrap: wrap;
 		margin-top:.5em;
@@ -728,47 +810,13 @@ img.photo1 {
 	}
 	.fb img {
 	    margin-right: 0;
-	
-	}
-	h1 {
-		font-size: 2.75em;
-		border-width: 6px;
-	    padding: 3px 38px;
-	}
-	h2 {
-		margin-top: 1em;
-		margin-bottom: .7em;
-	}
-	#logo img {
-		width: 4.5em;
-		margin-left: 1em;
-	}
-	#basket img {
-    max-width: 4em;
-    margin-right: 1em;
-	}
-	#contact_form hr {
-		margin-bottom: .5em;
-		height: 3px;
-	}
-	#tswcomments {
-    height: 180px;
-    border-width:3px;
-	}
-	#contacts {
-		margin-top: 1em;
-		margin-bottom: .75em;
-	}
-	.logos img {
-    max-width: 11.25em;
-    max-height: 3.7em;
-	}
-}
-@media only screen and (max-width: 1110px) {
+	    }
+	/* header / footer elements end*/
+
 	#contact_form {
 		width: 50%;
 	}
-	.store main, .about main {
+	.store main, .about main, .tailor main {
 		width: 90%;
 	}
 	.infusions main {
@@ -795,6 +843,10 @@ img.photo1 {
     /*background-image: url(images/background-photo-mobile-devices.jpg);*/
 	
 	}
+	body.home {
+	background: url(../images2/packages_bg_smaller.jpg); /* file size smaller
+       for mobile internet connections */
+	}
 	header nav a {
 	 margin: 0 7px;
 	}
@@ -819,13 +871,13 @@ img.photo1 {
 	#contact_form {
 		width: 55%;
 	}
-	.store main, .about main {
+	.store main, .about main, .tailor main {
 		width: 75%;
 	}
 	.infusions main {
 		width: 85%;
 	}
-	#conceito, #perfil {
+	#conceito, #perfil, #tailor {
     flex-direction: column;
 	}
 	.photo {
@@ -986,7 +1038,7 @@ img.photo1 {
     max-width: 3.5em;
     margin-right: 1em;
 	}
-	.about main {
+	.about main, .tailor main {
 		width: 90%;
 	}
 	.store main  {
