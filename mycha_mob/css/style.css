@@ -194,11 +194,14 @@ footer section:nth-child(2) {
 	}
 footer a {
 	font-size: .9em;
-	color: #9FB0AD;
+	color: #869598;
 	text-decoration: underline;
 	}
-footer a:visited, footer a:hover, footer a:active {
-	color: #9FB0AD;	
+footer a:hover {
+	color:#000;	
+	}
+footer a:visited, footer a:active {
+	color: #869598;	
 	}
 #wrapper {
     /*min-height: 100%;*/
@@ -844,8 +847,12 @@ img.photo1 {
 	
 	}
 	body.home {
-	background: url(../images2/packages_bg_smaller.jpg); /* file size smaller
+	background: url(../images2/packages_bg_smaller.jpg) no-repeat center center fixed; /* file size smaller
        for mobile internet connections */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	}
 	header nav a {
 	 margin: 0 7px;
@@ -1004,7 +1011,8 @@ img.photo1 {
 	  	display: block;
 	}
 	header nav {
-		 background-color: #bff141;
+		 /*background-color: #bff141;*/
+		 background-color: #e8f2d2;
 		 margin-bottom:0;
 	}
 	header nav a {
