@@ -15,7 +15,7 @@ li {
 	list-style-type: none;
 }
 body.home {
-	background: url(../images2/packages_bg.jpg) no-repeat center center fixed;
+	background: url(../images2/packages_bg1.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -30,6 +30,13 @@ body.contact {
 }
 body.infusions {
 	background-color: #fdfefa;
+}
+body.after_order {
+	background: url(../images2/strainer_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -68,6 +75,10 @@ h4 {
 	letter-spacing: .05em;
 	color: #a5b703;
 	}
+h4.complete{
+	color:#444;
+	margin-top: 140%;
+}
 h5 {
 	font-size: .8em;
 	color: #8f9bb0;
@@ -137,7 +148,7 @@ main {
 	display:flex;
 	align-items: center;
 }
-.home main {
+.home main  {
 	flex: 1; /* makes div grow to window-size */
 	justify-content: center;
 	flex-direction: column;
@@ -168,6 +179,11 @@ main {
 }
 .about main, .tailor main {
 	max-width: 1140px;
+	}
+.after_order main {
+	flex: 1; 
+	justify-content: center;
+	align-items: flex-start;
 	}
 .terms main {
 	flex-direction: column;
@@ -636,7 +652,7 @@ nav#family_links {
 }
 .myCha{
 	text-transform:uppercase;
-	color: #000;
+	/*color: #000;*/
 	font-size: .95em;
 }
 .cha_detail a:link, .cha_detail a:visited, .cha_detail a:hover, .cha_detail a:active {
@@ -791,6 +807,7 @@ img.photo1 {
 		padding-bottom: .4em;
 	}
 }
+
 @media only screen and (max-width: 1110px) {
 /* header / footer elements start*/
 	header section:nth-child(2) {
@@ -840,12 +857,7 @@ img.photo1 {
 	}
 }
 @media only screen and (max-width: 948px) {
-	  body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-    /*background-image: url(images/background-photo-mobile-devices.jpg);*/
-	
-	}
+	  
 	body.home {
 	background: url(../images2/packages_bg_smaller.jpg) no-repeat center center fixed; /* file size smaller
        for mobile internet connections */
@@ -903,6 +915,16 @@ img.photo1 {
 	}
 	.tea_family a {
 		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+	body.home {
+	background: url(../images2/packages_bg_V.jpg) no-repeat center center fixed; /* file size smaller
+       for mobile internet connections */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	}
 }
 @media only screen and (max-width: 800px) {
