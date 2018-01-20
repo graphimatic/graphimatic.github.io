@@ -5,6 +5,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Monk’s Cafe</title>
         <link href="https://fonts.googleapis.com/css?family=Jaldi:700|Work+Sans" rel="stylesheet"> 
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">				
         <link rel="stylesheet" type="text/css" href="css/style.css">
        
     </head>
@@ -22,17 +23,28 @@
 	    		<div>
 	    			<h3>Make a Reservation</h3>
 	    			<hr>
-	    			<form>
+	    			<form class="form-inline reservation-form">
 	    				<div>
 	    					<label for="name">Name</label>
-						    <input id="name" type="text" placeholder="insert your name">
+						    <input id="name" type="text" class="reservation-name" placeholder="insert your name">
 	    				</div>
-	    				<div>
+	    				<!-- <div>
 	    					<label for="date">Date</label>
 	    					<input id="date" type="text" placeholder="choose date">
-	    				</div>
+	    				</div> -->
+	    				<div class="dropdown">
+					         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+					            Select A Day
+					            <span class="caret"></span>
+					          </button>
+					          <ul class="dropdown-menu reservation-day">
+					            <li><a>Today</a></li>
+					            <li><a>Tomorrow</a></li>
+					            <li><a>The day after next</a></li>
+					          </ul>
+					      </div>
 	    				<div>
-	    					<button>Confirm Reservation</button>
+	    					<button class="confirm_bttn">Confirm Reservation</button>
 	    				</div>
 					</form>
 	    		</div>
@@ -41,10 +53,11 @@
 	    			<hr>
 	    			<table>
 						<thead>
-						<th>Name</th>
-						<th>Day</th>
+							<th>Name</th>
+							<th>Day</th>
 						</thead>
-						<tbody> 
+						<tbody>
+							<ul class="reservations"></ul> 
 						</tbody>
 					</table>
 	    		</div>
@@ -69,10 +82,19 @@
     		
     	</footer>
 
+	<!-- handlebars template -->
+    <script id="reservation-template" type="text/x-handlebars-template">
+	    <li data-id="{{reservationId}}">
+	    <p>Hi, {{name}}. Your reservation is all set for {{day}}.</p>
+	    </li>
+	</script>
+	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-	<script src="js/handlebars-v4.0.5.js"></script>
-
+	<script src="js/handlebars-v4.0.11.js"></script>
 	<script src="js/jquery-3.0.0.js"></script>
+	<!-- bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<script src="js/main.js"></script>
 	<script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXZtvZPcvZw6PImOKA1iWYItI36Jgz6C4&callback=initMap">
