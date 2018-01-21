@@ -74,8 +74,83 @@ getReservations();
 
 function initMap() {
 
+	var styles = [
+		{ featureType: 'all',
+			elementType: 'labels.text.stroke',
+			stylers: [
+				{ visibility: 'off' }
+			]
+		},
+		{ featureType: 'administrative', 
+		elementType: 'labels.text',
+		stylers: [
+			{ color: '#2d333a'}
+			]
+
+		},
+		{ featureType: 'poi', 
+			elementType: 'labels.text',
+			stylers: [
+				{ visibility: 'off'}
+			]
+		},
+		{ featureType: 'poi.park', 
+			elementType: 'labels.text',
+			stylers: [
+				{ color: '#43a82d'}
+			]
+		},
+		{ featureType: 'poi', 
+		elementType: 'labels.icon',
+		stylers: [
+			{ visibility: 'off'}
+			]
+
+		},
+		{ featureType: 'road.highway',
+		elementType: 'geometry',
+		stylers: [
+			{ visibility: 'off' }
+			]
+
+		},
+		{ featureType: 'road.highway',
+		elementType: 'labels.icon',
+		stylers: [
+			{ visibility: 'off' }
+			]
+
+		},
+		{ featureType: 'water',
+			stylers: [
+				{ color: '#a0bad6' }
+			]
+		}, 
+		{ featureType: 'landscape',
+		  elementType: 'geometry',
+		  stylers: [
+				{ color: '#f2f2f2'}
+				]
+		},
+		{
+			featureType: 'poi.park',
+			elementType: 'geometry',
+				stylers: [
+					{ color: '#e8f2dc'}
+				]
+			
+		}
+	];
+
 	var map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 40.8054491, lng: -73.9654415},
-		zoom: 14
+		zoom: 15,
+		styles: styles
 		});
+
+	var marker = new google.maps.Marker({
+		position: {lat: 40.8054491, lng: -73.9654415},
+		map: map,
+		title: 'Monks Café'
+	}); 
 }
