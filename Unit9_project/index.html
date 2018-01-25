@@ -55,9 +55,10 @@
 						<thead>
 							<th>Name</th>
 							<th>Day</th>
+							<th>cancel</th>
 						</thead>
-						<tbody>
-							<ul class="reservations"></ul> 
+						<tbody class="reservations">
+							
 						</tbody>
 					</table>
 	    		</div>
@@ -84,9 +85,12 @@
 
 	<!-- handlebars template -->
     <script id="reservation-template" type="text/x-handlebars-template">
-	    <li data-id="{{reservationId}}">
-	    <p>Hi, {{name}}. Your reservation is all set for {{day}}.</p>
-	    </li>
+    	<tr data-id="{{reservationId}}">
+    		<td>{{name}}</td>
+    		<td>{{day}}</td>
+    		<td id="delete"><button>X</button></td>
+    	</tr>
+	    
 	</script>
 	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>

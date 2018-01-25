@@ -66,6 +66,16 @@ function getReservations() {
 
 		}
 	});
+
+	$('#delete').on('click', function(e) {
+		e.preventDefault();
+		// get this parent's data id 
+		$.get(this).parent(data-id)
+		// go to firebase and delete this entry
+		//in html delete this row
+
+
+	});
 }
 getReservations();
 
