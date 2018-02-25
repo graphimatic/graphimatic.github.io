@@ -27,7 +27,9 @@
 	    				<div>
 	    					<label for="name">Name</label>
 						    <input id="name" type="text" class="reservation-name" placeholder="insert your name">
+
 	    				</div>
+
 	    				<!-- <div>
 	    					<label for="date">Date</label>
 	    					<input id="date" type="text" placeholder="choose date">
@@ -43,8 +45,10 @@
 					            <li><a>The day after next</a></li>
 					          </ul>
 					      </div>
+					      <p id="message"></p>
 	    				<div>
-	    					<button class="confirm_bttn">Confirm Reservation</button>
+	    					<button type="submit" class="confirm_bttn">Confirm Reservation</button>
+
 	    				</div>
 					</form>
 	    		</div>
@@ -88,7 +92,7 @@
     	<tr data-id="{{reservationId}}">
     		<td>{{name}}</td>
     		<td>{{day}}</td>
-    		<td id="delete"><button>X</button></td>
+    		<td class="delete"><button>X</button></td>
     	</tr>
 	    
 	</script>

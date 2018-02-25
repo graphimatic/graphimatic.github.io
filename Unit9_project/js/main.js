@@ -1,4 +1,27 @@
 
+// form validation
+	
+	// find the input field
+	var nameInput = document.getElementById('name');
+
+	//blur event (the user 'leaves' the email field)
+
+	nameInput.addEventListener('blur', function(){
+
+		if (nameInput.value.length === 0){
+
+			document.getElementById('message').innerText = 'Please enter your name';
+			nameInput.className = 'error';
+
+		}
+		else {
+			document.getElementById('message').innerText = '';
+			nameInput.className = '';
+		}
+	});
+
+
+
 //config object from firebase to initialize firebase
 
   var config = {
@@ -67,11 +90,14 @@ function getReservations() {
 		}
 	});
 
+// cancel a reservation
+
 	$('#delete').on('click', function(e) {
 		e.preventDefault();
 		// get this parent's data id 
-		$.get(this).parent(data-id)
+		$('this').parent(data-id)
 		// go to firebase and delete this entry
+		reservationsReference.delete(reservationData);
 		//in html delete this row
 
 
