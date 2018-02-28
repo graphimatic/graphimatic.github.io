@@ -13,7 +13,7 @@ input[type=text], textarea {
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
-  outline: none;
+  /*outline: none;*/
   border: 1px solid #DDDDDD;
 }
  
@@ -21,6 +21,9 @@ input[type=text]:focus, textarea:focus {
   box-shadow: 0 0 6px rgba(96, 142, 229, .8);
   border: 1px solid #608ee5;
 }
+input.error {
+	border: 1px solid red;
+} 
 body {
 	background-color: #f5f5f5;
 	font-family: 'Work Sans', arial, sans-serif;
@@ -202,9 +205,7 @@ p.attribution {
 	font-size: .9em;
 	font-style: italic;
 }  
-.error {
-	border: 1px solid red;
-} 
+
 #message {
 	font-size: .8em;
 	color:red;
