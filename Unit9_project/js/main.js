@@ -15,8 +15,10 @@
 
 		}
 		else {
+			// sendform();
 			document.getElementById('message').innerText = '';
 			nameInput.className = '';
+
 		}
 	});
 
@@ -92,21 +94,21 @@ function getReservations() {
 
 // cancel a reservation
 
-	$('#delete').on('click', function(e) {
-		e.preventDefault();
+	// $('#delete').on('click', function(e) {
+	// 	e.preventDefault();
 		// get this parent's data id 
-		$('this').parent() = var cell
+		// $('this').parent() = var cell;
 
-		cell.parent(data-id) = var reservationId
+		// cell.parent(data-id) = var reservationId;
 
 		// go to firebase and delete this entry
-		reservationsReference.delete(reservationData);
+		// reservationsReference.delete(reservationData);
 
 		//in html delete this row
-		$('this'.reservationId).delete()
+		// $('this'.reservationId).delete();
 
 
-	});
+	// });
 }
 getReservations();
 
