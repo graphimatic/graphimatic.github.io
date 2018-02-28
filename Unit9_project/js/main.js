@@ -95,10 +95,15 @@ function getReservations() {
 	$('#delete').on('click', function(e) {
 		e.preventDefault();
 		// get this parent's data id 
-		$('this').parent(data-id)
+		$('this').parent() = var cell
+
+		cell.parent(data-id) = var reservationId
+
 		// go to firebase and delete this entry
 		reservationsReference.delete(reservationData);
+
 		//in html delete this row
+		$('this'.reservationId).delete()
 
 
 	});
